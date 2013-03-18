@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/app.css" />
-
+    <link rel="stylesheet" href="css/style.css" />
     <script src="js/vendor/custom.modernizr.js"></script>
 
 </head>
@@ -16,24 +16,39 @@
     <div id="container">
         <header>
             <div class="row">
-                <div class="large-3 columns">Logo</div>
-                <div class="large-7 columns">Be a smart super - call (508) 488-9874 today!</div>
-                <div class="large-2 columns">Made in MA</div>
+                <div class="large-5 columns">
+                    <a class="brand" href="#">
+                        <i class="icon-logo"></i>
+                        <i class="icon-brand"></i>
+                    </a>
+                    <div class="sub-heading">Massachusetts Contractor Certification</div>
+                </div>
+                <div class="large-4 columns">
+                    <div class="headline-heading">Be a smart super - call (508) 488-9874 today!</div>
+                </div>
+                <div class="large-2 columns">
+                    <i class="icon-boston"></i>
+                </div>
             </div>
-            <nav class="row text-center">
-                <div class="large-1 columns"><a href="#">Home</a></div>
-                <div class="large-2 columns"><a href="#">Online Education</a></div>
-                <div class="large-3 columns"><a href="#">Classroom Education</a></div>
-                <div class="large-2 columns"><a href="#">Mass Regulations</a></div>
-                <div class="large-2 columns"><a href="#">Why Choose Us</a></div>
-                <div class="large-1 columns"><a href="#">News</a></div>
-                <div class="large-1 columns"><a href="#">Contact</a></div>
-            </nav>
+            <div class="nav-background">
+                <nav class="row top-bar-section">
+                    <ul class="left">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Online Education</a></li>
+                        <li><a href="#">Classroom Education</a></li>
+                        <li><a href="#">Mass Regulations</a></li>
+                        <li><a href="#">Why Choose Us</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contact</a></li>
+                </ul>
+                </nav>
+            </div>
         </header>
-        <div class="main">
+        <div class="row main">
             <div class="row">
-                <div class="large-9 column">
-                    <ul data-orbit>
+                <div class="large-8 column">
+                    <img src="css/img/Banner-Placer.png">
+                    <!-- <ul data-orbit>
                         <li>
                             <img src="http://foundation.zurb.com/docs/img/demos/demo2.png" alt="">
                             <div class="orbit-caption">Slide 1</div>
@@ -46,52 +61,39 @@
                             <img src="http://foundation.zurb.com/docs/img/demos/demo2.png" alt="">
                             <div class="orbit-caption">Slide 3</div>
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
-                <div class="short-form" class="large-3 column">
-                    <form class="custom">
+                <div class="short-form large-4 column">
+                    <form class="custom custom-csl">
                         <fieldset>
-                            <legend>Get Certified Today!</legend>
-                            <div class="row">
-                                <div class="large-6 column">
-                                    <input type="text" name="firstName" placeholder="First Name"/>
-                                </div>
-                                <div class="large-6 column">
-                                    <input type="text"  name="lastName" placeholder="Last Name"/>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="large-12 column">
-                                    <input name="email" placeholder="Email Address" type="text" />
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="large-12 column">
-                                    <select name="course" class="custom dropdown large">
-                                        <option value="online">Online CSL Course</option>
-                                        <option value="offline">Real-World CSL Course</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="large-12 column">
-                                    <select name="course" class="custom dropdown large">
-                                        <option value="12">12 Hour CSL Certification</option>
-                                        <option value="10">10 Hour CSL Certification</option>
-                                        <option value="6">6 Hour CSL Certification</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="large-12 column">
-                                    <a href="#" class="button expand">Get Certified Now!</a>
-                                </div>
-                            </div>
+                            <h3>Get Certified Today!</h3>
+                      
+                            <input type="text" name="firstName" placeholder="Name" />                       
+                   
+                            <input name="email" placeholder="Email Address" type="text" />
+                        
+                    
+                            <select name="course" class="custom dropdown large">
+                                <option value="online">Online CSL Course</option>
+                                <option value="offline">Real-World CSL Course</option>
+                            </select>
+                        
+                  
+                        
+                            <select name="course" class="custom dropdown large">
+                                <option value="12">12 Hour CSL Certification</option>
+                                <option value="10">10 Hour CSL Certification</option>
+                                <option value="6">6 Hour CSL Certification</option>
+                            </select>
+                        
+                    
+                            <a href="#" class="button expand button-orange">Get Certified Now!</a>
+                               
                         </fieldset>
                     </form>
                 </div>
             </div>
-            <div class="row">
+            <div class="row fp-top-section">
                 <div class="large-3 column">
                     <h5>Online CLS Courses</h5>
                     <p>
@@ -130,66 +132,62 @@
                 </div>
                 <div class="large-3 column">
                     <h5>Upcoming Classes</h5>
-                    <ul>
-                        <li>February 1st @ Grafton</li>
-                        <li>February 1st @ Grafton</li>
-                        <li>February 1st @ Grafton</li>
-                        <li>February 1st @ Grafton</li>
-                        <li>February 1st @ Grafton</li>
-                        <li>February 1st @ Grafton</li>
-                        <li>February 1st @ Grafton</li>
-                        <li>February 1st @ Grafton</li>
+                    <ul class="calendar">
+                        <li><a href="#">February 1st @ Grafton</a></li>
+                        <li><a href="#">February 1st @ Grafton</a></li>
+                        <li><a href="#">February 1st @ Grafton</a></li>
+                        <li><a href="#">February 1st @ Grafton</a></li>
+                        <li><a href="#">February 1st @ Grafton</a></li>
+                        <li><a href="#">February 1st @ Grafton</a></li>
+                        <li><a href="#">February 1st @ Grafton</a></li>
+                        <li><a href="#">February 1st @ Grafton</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="row">
-                <div class="large-9 column">
-                    <h2>Mass Nail It - Massachusetts Contractor Training When <em>YOU</em> Need IT</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
+            <div class="row fp-bottom-section">
+                <div class="large-8 column">
+                    <div class="fp-bottom-inner">
+                        <h2>Mass Nail It - Massachusetts Contractor Training When <em>YOU</em> Need IT</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
                 </div>
-                <div class="large-3 column">
+                <div class="large-4 column">
                     <h4>Real Customers</h4>
 
-                    <div class="row">
-                        <div class="large-3"><img src="" /></div>
-                        <div class="large-9">
-                            <div>“Lorem ipsum dolor sit amet,
+                        <div class="testimonial"><img src="css/img/customer.jpg" />
+                            <p>“Lorem ipsum dolor sit amet,
                             consectetur adipiscing elit. Morbi
                             in commodo ipsum. Lorem
-                            dolor sit amet, consectetur”</div>
+                            dolor sit amet, consectetur”
                             <em>Bob from Lexington</em>
+                            </p>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="large-3"><img src="" /></div>
-                        <div class="large-9">
-                            <div>“Lorem ipsum dolor sit amet,
-                                consectetur adipiscing elit. Morbi
-                                in commodo ipsum. Lorem
-                                dolor sit amet, consectetur”</div>
+
+                        <div class="testimonial"><img src="css/img/customer.jpg" />
+                            <p>“Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Morbi
+                            in commodo ipsum. Lorem
+                            dolor sit amet, consectetur”
                             <em>Bob from Lexington</em>
+                            </p>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="large-3"><img src="" /></div>
-                        <div class="large-9">
-                            <div>“Lorem ipsum dolor sit amet,
-                                consectetur adipiscing elit. Morbi
-                                in commodo ipsum. Lorem
-                                dolor sit amet, consectetur”</div>
+                        <div class="testimonial"><img src="css/img/customer.jpg" />
+                            <p>“Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Morbi
+                            in commodo ipsum. Lorem
+                            dolor sit amet, consectetur”
                             <em>Bob from Lexington</em>
+                            </p>
                         </div>
-                    </div>
                 </div>
             </div>
-        </div>
         <footer>
-            <nav class="row text-center">
+            <nav class="row text-center nav-footer">
                 <div class="large-1 columns"><a href="#">Home</a></div>
                 <div class="large-2 columns"><a href="#">Online Education</a></div>
                 <div class="large-3 columns"><a href="#">Classroom Education</a></div>
@@ -209,6 +207,7 @@
                 </div>
             </div>
         </footer>
+        </div>
     </div>
 
     <script>
