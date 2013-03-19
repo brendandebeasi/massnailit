@@ -9,19 +9,34 @@ p, ol, ul, li, blockquote, em, strong {
 	font-size:.9em;
 }
 
-.button {
+.button.red {
 	background-color: #6d0c0c;
 	border-color: #7e0b0b;
 	font-size:.8em;
 	-webkit-border-radius:4px;
 	-moz-border-radius:4px;
 	border-radius:4px;
+}
+
+.button.blue {
+	background-color:#237ae6;
+	border-color: #4b9afa;
+}
+
+.button.orange  {
 
 }
+
 .main { 
 	background: #ebebeb;
 	padding:15px;
 	box-shadow: 1px 1px 25px #666;
+}
+
+.divider { 
+	height:1px;
+	background: #c0c0c0;
+	margin-bottom: 1em;
 }
 /**
 ** HEADER **
@@ -244,6 +259,13 @@ box-shadow: 1px 1px #ccc;
 	color: #0552aa;
 }
 
+.content-inner .calendar li{
+	padding:5px;
+}
+
+.content-inner ul.calendar {
+	margin-bottom:15px;
+}
 
 /* Page */
 
@@ -255,6 +277,56 @@ box-shadow: 1px 1px #ccc;
 .content-inner h1 {
 	color: #35375f;
 	font-size:1.5em;
+}
+
+
+/* Pricing Tables */
+
+.pricing {
+	border-bottom:2px solid #b5b5b5;
+	border-left: 2px solid #b5b5b5;
+	border-right:2px solid #b5b5b5;
+	border-radius:5px;
+	padding:5px;
+	margin-top:10px;
+}
+
+.pricing.best-value {
+	border-bottom:2px solid #a1ff80;
+	border-left: 2px solid #a1ff80;
+	border-right:2px solid #a1ff80;
+}
+
+.pricing.best-value strong {
+	font-weight:bold;
+	color: #2f9a13;
+	text-align:center;
+	font-size:1em;
+}
+.pricing h2 {
+	font-size: .8em;
+	margin-top:-14px;
+}
+
+.pricing p {
+	font-size:.9em;
+}
+.pricing p.price {
+	color:#c10c0c;
+	font-weight:bold;
+	text-align:right;
+	clear:both;
+	margin-bottom:0;
+	margin-top:0;
+	font-size:1.1em;
+}
+
+.pricing .button.blue {
+	font-size: 0.8em;
+	text-align: left;
+	padding: 15px 10px;
+	margin: 5px 5px;
+	border-radius: 3px;
 }
 /* Footer */
 
