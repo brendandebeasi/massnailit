@@ -37,6 +37,7 @@ p, ol, ul, li, blockquote, em, strong {
 	height:1px;
 	background: #c0c0c0;
 	margin-bottom: 1em;
+	clear:both;
 }
 /**
 ** HEADER **
@@ -327,6 +328,20 @@ box-shadow: 1px 1px #ccc;
 	padding: 15px 10px;
 	margin: 5px 5px;
 	border-radius: 3px;
+}
+
+/* WP Global CSS */
+
+img.alignleft {
+	float:left;
+	clear:both;
+	margin:5px 10px 10px 0;
+}
+
+img.alignright {
+	float:right;
+	clear:both;
+	margin:5px 0 10px 10px;
 }
 /* Footer */
 
