@@ -281,6 +281,22 @@ box-shadow: 1px 1px #ccc;
 	font-size:1.5em;
 }
 
+.content-inner h2 {
+	color: #35375f;
+	font-size:1.4em;
+}
+
+div.article {
+	border-bottom:1px solid #c0c0c0;
+	padding:10px 0;
+	margin-bottom:10px;
+}
+
+.article .author {
+	font-size:.9em;
+	color: #afa6a6;
+	margin-bottom:10px;
+}
 
 /* Pricing Tables */
 
