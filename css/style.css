@@ -57,7 +57,7 @@ header {
 }
 .icon-brand{
 	background: url(img/mass-nail-it.png) no-repeat;
-	width:243px;
+	width:242px;
 	height:43px;
 	display:block;
 	margin:10px 0px 5px 70px;
@@ -68,7 +68,7 @@ header {
 	color: #111111;
 	font-family:"Myriad Pro"; /* Get font style */
 	text-shadow: 0px 1px 0px #fff;
-	font-size:1.1em;
+	font-size:1em;
 	font-weight:600;
 }
 
@@ -84,14 +84,16 @@ header {
 }
 
 .icon-boston {
-	background:url(img/entering-boston-sign.png) no-repeat;
-	width:112px;
-	height:90px;
+	background:url(img/we-local.png) no-repeat;
+	width:147px;
+	height:93px;
 	display:block;
+	margin-top:-10px;
 }
 
 .nav-background {
 	background:#2b2b2b;
+	margin-top:10px;
 }
 
 nav {
@@ -172,6 +174,11 @@ text-align: center;
 #inputname {
 	background:url(img/icon-user.png) left no-repeat;
 	padding-left:5px;
+}
+
+.fp-image {
+	display:block;
+	margin:0 auto;
 }
 .fp-top-section h5 {
 	font-size:1em;
@@ -284,6 +291,11 @@ box-shadow: 1px 1px #ccc;
 .content-inner h2 {
 	color: #35375f;
 	font-size:1.4em;
+}
+
+.content-inner h3 {
+	color: #35375f;
+	font-size:1.3em;
 }
 
 div.article {
@@ -401,4 +413,24 @@ footer p {
 
 .nav-footer a {
 	color: #373737;
+}
+
+@media only screen and (max-width: 467px) {
+	.icon-boston {
+		display:none;
+	}
+	.headline-heading {
+		display:block
+	}
+}
+@media only screen and (max-width: 767px) {
+	.headline-heading {
+		display:none;
+	}
+	.icon-boston {
+		position: absolute;
+		right: 0;
+		top: -75px;
+		bottom: 0;
+	}
 }
