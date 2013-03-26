@@ -88,7 +88,7 @@ header {
 	width:147px;
 	height:93px;
 	display:block;
-	margin-top:-10px;
+    line-height: 93px;
 }
 
 .nav-background {
