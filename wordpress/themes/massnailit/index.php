@@ -1,67 +1,15 @@
-<!DOCTYPE html>
-<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-    <meta charset='utf-8' />
-    <meta name="viewport" content="width=device-width" />
-    <title>MassNailIt - Massachusetts CSL Training. Be a smart super!</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/app.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="js/vendor/custom.modernizr.js"></script>
-
-</head>
-<body>
-    <div id="container">
-        <header>
-            <div class="row">
-                <div class="large-5 columns">
-                    <a class="brand" href="#">
-                        <i class="icon-logo"></i>
-                        <i class="icon-brand"></i>
-                    </a>
-                    <div class="sub-heading">Massachusetts Contractor Certification</div>
-                </div>
-                <div class="large-4 columns">
-                    <div class="headline-heading">Be a smart super - call (508) 488-9874 today!</div>
-                </div>
-                <div class="large-3 columns">
-                    <i class="icon-boston"></i>
-                </div>
-            </div>
-                <nav class="nav-background">
-                    <div class="large-12 column row top-bar-section">
-                        <ul class="left">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#">Online Education</a></li>
-                            <li><a href="#">Classroom Education</a></li>
-                            <li><a href="#">Mass Regulations</a></li>
-                            <li><a href="#">Why Choose Us</a></li>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                </nav>
-        </header>
+<?php get_header();?>
         <div class="row main">
             <div class="row">
                 <div class="large-8 column">
-                    <img src="css/img/Banner-Placer.png" class="fp-image" alt="">
-                    <!-- <ul data-orbit>
+                    <ul data-orbit>
+                    <?php while (have_posts()) : the_post(); $featured = rwmb_meta( 'rw_featured_image_checkbox'); if ($featured == "1") { ?>
                         <li>
-                            <img src="http://foundation.zurb.com/docs/img/demos/demo2.png" alt="">
-                            <div class="orbit-caption">Slide 1</div>
+                        <?php if (has_post_thumbnail()) { the_post_thumbnail(('post-thumbnail' ), array('class' => 'fp-image')); } ?> 
+                        <div class="orbit-caption"><a href="<?php the_permalink();?>"><?php the_title();?></a></div>
                         </li>
-                        <li>
-                            <img src="http://foundation.zurb.com/docs/img/demos/demo2.png" alt="">
-                            <div class="orbit-caption">Slide 2</div>
-                        </li>
-                        <li>
-                            <img src="http://foundation.zurb.com/docs/img/demos/demo2.png" alt="">
-                            <div class="orbit-caption">Slide 3</div>
-                        </li>
-                    </ul> -->
+                    <?php } endwhile; ?>
+                    </ul>
                 </div>
                 <div class="short-form large-4 column">
                     <form class="custom custom-csl">
@@ -148,12 +96,8 @@
                 <div class="large-8 column">
                     <div class="fp-bottom-inner">
                         <h2>Mass Nail It - Massachusetts Contractor Training When <em>YOU</em> Need IT</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </div>
                 <div class="large-4 column">
@@ -186,41 +130,4 @@
                         </div>
                 </div>
             </div>
-        <footer>
-            <nav class="row text-center">
-                <div class="nav-footer">
-                    <div class="large-1 columns"><a href="#">Home</a></div>
-                    <div class="large-2 columns"><a href="#">Online Education</a></div>
-                    <div class="large-3 columns"><a href="#">Classroom Education</a></div>
-                    <div class="large-2 columns"><a href="#">Mass Regulations</a></div>
-                    <div class="large-2 columns"><a href="#">Why Choose Us</a></div>
-                    <div class="large-1 columns"><a href="#">News</a></div>
-                    <div class="large-1 columns"><a href="#">Contact</a></div>
-                </div>
-            </nav>
-            <div class="row">
-                <div class="footer-bottom">
-                    <div class="large-4 push-4 columns">
-                        <p>&copy; 2013 Mass Nail It</p>
-                        <p>BBRS Coordinator ID: CD-0023</p>
-                    </div>
-                    <div class="large-4 columns right">
-                        <a href="#"><i class="truste"></i></a>
-                        <a href="#"><i class="verisign"></i></a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        </div>
-    </div>
-
-    <script>
-        document.write('<script src=' +
-                ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
-                '.js><\/script>')
-    </script>
-    <script src="js/foundation.min.js"></script>
-    <script>
-        $(document).foundation();
-    </script>
-</body>
+<?php get_footer();?>

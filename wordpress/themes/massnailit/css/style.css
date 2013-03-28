@@ -304,7 +304,7 @@ div.article {
 	margin-bottom:10px;
 }
 
-.article .author {
+.author {
 	font-size:.9em;
 	color: #afa6a6;
 	margin-bottom:10px;
@@ -433,4 +433,15 @@ footer p {
 		top: -75px;
 		bottom: 0;
 	}
+}
+
+
+/* WP Classes */
+.top-bar-section li.current_page_item a:not(.button)
+{
+	background: #414141;
+}
+
+.top-bar-section li.current_page_item a:hover {
+	background:#333;
 }
