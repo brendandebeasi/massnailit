@@ -8,4 +8,4 @@ $app->cfgCon("mni");
 $returnFields = ['Id','ProductName','ProductPrice','ShortDescription'];
 $query = ['Id' => '%'];
 $contacts = $app->dsQuery("Product",10,0,$query,$returnFields);
-print_r($contacts);
+echo json_encode($contacts);
