@@ -1,3 +1,6 @@
 *.log
 .htpasswd
 .htaccess
+.idea/*
+.DS_Store
+is-test/.DS_Store
