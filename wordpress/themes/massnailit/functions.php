@@ -1,5 +1,4 @@
-<?php
-
+<?php 
 add_action( 'admin_init', 'rw_register_featured_image_meta_box' );
 function rw_register_featured_image_meta_box()
 {
@@ -42,3 +41,5 @@ $args['show_home'] = true;
 return $args;
 }
 add_filter( 'wp_page_menu_args', 'home_page_menu_args' );
+
+include('mni-options.php');

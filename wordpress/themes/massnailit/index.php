@@ -42,42 +42,8 @@
                 </div>
             </div>
             <div class="row fp-top-section">
-                <div class="large-3 column">
-                    <h5>Online CLS Courses</h5>
-                    <p>
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Morbi
-                        in commodo ipsum. Lorem ipsum
-                        dolor sit amet, consectetur
-                        adipiscing elit. Morbi in commodo
-                        ipsum dolor elit morbi.
-                    </p>
-                    <a href="#" class="button red">Read More</a>
-                </div>
-                <div class="large-3 column">
-                    <h5>Classroom CLS Courses</h5>
-                    <p>
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Morbi
-                        in commodo ipsum. Lorem ipsum
-                        dolor sit amet, consectetur
-                        adipiscing elit. Morbi in commodo
-                        ipsum dolor elit morbi.
-                    </p>
-                    <a href="#" class="button red">Read More</a>
-                </div>
-                <div class="large-3 column">
-                    <h5>Group CLS Courses</h5>
-                    <p>
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Morbi
-                        in commodo ipsum. Lorem ipsum
-                        dolor sit amet, consectetur
-                        adipiscing elit. Morbi in commodo
-                        ipsum dolor elit morbi.
-                    </p>
-                    <a href="#" class="button red">Read More</a>
-                </div>
+                <?php display_home_promos(); ?>
+
                 <div class="large-3 column">
                     <h5>Upcoming Classes</h5>
                     <ul class="calendar">
@@ -102,32 +68,7 @@
                 </div>
                 <div class="large-4 column">
                     <h4>Real Customers</h4>
-
-                        <div class="testimonial"><img src="css/img/customer.jpg" />
-                            <p>“Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit. Morbi
-                            in commodo ipsum. Lorem
-                            dolor sit amet, consectetur”
-                            <em>Bob from Lexington</em>
-                            </p>
-                        </div>
-
-                        <div class="testimonial"><img src="css/img/customer.jpg" />
-                            <p>“Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit. Morbi
-                            in commodo ipsum. Lorem
-                            dolor sit amet, consectetur”
-                            <em>Bob from Lexington</em>
-                            </p>
-                        </div>
-                        <div class="testimonial"><img src="css/img/customer.jpg" />
-                            <p>“Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit. Morbi
-                            in commodo ipsum. Lorem
-                            dolor sit amet, consectetur”
-                            <em>Bob from Lexington</em>
-                            </p>
-                        </div>
-                </div>
+                        <?php display_testimonials();?>
+                    </div>
             </div>
 <?php get_footer();?>
