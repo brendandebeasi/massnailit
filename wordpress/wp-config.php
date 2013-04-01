@@ -4,6 +4,9 @@
 if (strpos($_SERVER['HTTP_HOST'], 'dev.massnailit.com') !== false) {
     $config_file = 'config/dev.php';
 }
+elseif (strpos($_SERVER['HTTP_HOST'], '127.0.0.1') !== false) {
+    $config_file = 'config/dev2.php';
+}
 elseif (strpos($_SERVER['HTTP_HOST'], 'stage.mni.neueway.com') !== false) {
     $config_file = 'config/stage.php';
 }
