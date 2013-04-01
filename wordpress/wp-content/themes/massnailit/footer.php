@@ -28,10 +28,10 @@
 
     <script>
         document.write('<script src=' +
-                ('__proto__' in {} ? 'http://127.0.0.1:8080/wordpress/wp-content/themes/massnailit/js/vendor/zepto' : 'http://127.0.0.1:8080/wordpress/wp-content/themes/massnailit/js/vendor/jquery') +
+                ('__proto__' in {} ? '<?php bloginfo('stylesheet_directory'); ?>/js/vendor/zepto' : 'http://127.0.0.1:8080/wordpress/wp-content/themes/massnailit/js/vendor/jquery') +
                 '.js><\/script>')
     </script>
-    <script src="http://127.0.0.1:8080/wordpress/wp-content/themes/massnailit/js/foundation.min.js"></script>
+    <script src="<?php bloginfo('stylesheet_directory'); ?>/js/foundation.min.js"></script>
     <script>
         $(document).foundation();
     </script>

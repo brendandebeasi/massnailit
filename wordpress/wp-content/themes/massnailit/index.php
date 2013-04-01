@@ -103,7 +103,7 @@
                 <div class="large-4 column">
                     <h4>Real Customers</h4>
 
-                        <div class="testimonial"><img src="css/img/customer.jpg" />
+                        <div class="testimonial"><img src="<?php bloginfo('stylesheet_directory'); ?>/css/img/customer.jpg" />
                             <p>“Lorem ipsum dolor sit amet,
                             consectetur adipiscing elit. Morbi
                             in commodo ipsum. Lorem
@@ -112,7 +112,7 @@
                             </p>
                         </div>
 
-                        <div class="testimonial"><img src="css/img/customer.jpg" />
+                        <div class="testimonial"><img src="<?php bloginfo('stylesheet_directory'); ?>/css/img/customer.jpg" />
                             <p>“Lorem ipsum dolor sit amet,
                             consectetur adipiscing elit. Morbi
                             in commodo ipsum. Lorem
@@ -120,7 +120,7 @@
                             <em>Bob from Lexington</em>
                             </p>
                         </div>
-                        <div class="testimonial"><img src="css/img/customer.jpg" />
+                        <div class="testimonial"><img src="<?php bloginfo('stylesheet_directory'); ?>/css/img/customer.jpg" />
                             <p>“Lorem ipsum dolor sit amet,
                             consectetur adipiscing elit. Morbi
                             in commodo ipsum. Lorem
