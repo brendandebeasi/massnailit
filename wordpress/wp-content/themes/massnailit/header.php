@@ -33,7 +33,7 @@
                     <div class="">Be a smart super - call (508) 488-9874 today!</div>
                 </div>
                 <div class="large-2 columns">
-                    <i class="icon-boston"></i>
+                    <a href="javascript:alert('Our headquarters is located in Milford, MA by a Milford Native');" class="icon-boston"></a>
                 </div>
             </div>
                 <nav class="nav-background">

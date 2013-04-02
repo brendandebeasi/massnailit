@@ -107,9 +107,14 @@ nav {
 .top-bar-section ul {
 	list-style:none;
 }
+.top-bar-section .left {
+    left: -100px;
+    position: relative;
+}
 .top-bar-section ul li {
     float: left;
 }
+
 .top-bar-section li a:not(.button) {
 	background:#2b2b2b;
 	border-right:1px solid #141414;
@@ -117,10 +122,15 @@ nav {
 	padding:5px 15px;
 }
 
-.top-bar-section li.active a:not(.button), .top-bar-section li a:hover {
+.top-bar-section li.active a:not(.button) {
 	background: #414141;
 }
-
+.top-bar-section li > a {
+    color: #ffffff;
+}
+.top-bar-section li > a:hover  {
+    color: #b4b4b4;
+}
 /** Homepage **/
 
 .custom-csl {
