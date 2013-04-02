@@ -79,7 +79,7 @@ header {
 	text-shadow: 0px 1px 0px #fff;
 	color: #4b0404;
 	font-weight:bold;
-	margin-top:20px;
+	margin-top:33px;
 
 }
 
@@ -89,6 +89,7 @@ header {
 	height:93px;
 	display:block;
 	margin-top:-10px;
+    float: right;
 }
 
 .nav-background {
@@ -106,7 +107,9 @@ nav {
 .top-bar-section ul {
 	list-style:none;
 }
-
+.top-bar-section ul li {
+    float: left;
+}
 .top-bar-section li a:not(.button) {
 	background:#2b2b2b;
 	border-right:1px solid #141414;
@@ -197,11 +200,9 @@ text-align: center;
 }
 
 .fp-bottom-section h2 {
-	color: #1a57a3;
+	color: #57000c;
 	font-size:1.2em;
-	border-bottom:1px solid #e6e6e6;
-	padding-bottom:5px;
-	margin:10px 0 15px;
+	margin:10px 0 20px;
 }
 
 .fp-bottom-section h4 {
@@ -403,28 +404,54 @@ footer p {
 
 }
 
-.nav-footer {
-	border-top:2px solid #ebebeb;
-	border-bottom:2px solid #ebebeb;
-	margin:20px 0;
+nav .bottom ul {
 	background: #d0d0d0;
-	padding:20px 0 30px;
+    display: block;
 }
+nav .bottom li {
+    display: inline-block;
+    padding: 20px;
+    border-top:1px solid #e2e2e2;
+    border-bottom:1px solid #b4b4b4;
+    text-align: center;
+}
+nav .bottom li:hover {
+    background: #d0d0d0;
 
-.nav-footer a {
-	color: #373737;
+}
+nav .bottom li a {
+    display: block;
+	color: #666666;
+}
+nav .bottom li a:hover {
+    color: #780800;
 }
 
 @media only screen and (max-width: 467px) {
 	.icon-boston {
 		display:none;
 	}
-	.headline-heading {
+	.headline-heading div {
 		display:block
 	}
 }
-@media only screen and (max-width: 767px) {
-	.headline-heading {
+@media only screen and (max-width: 549px) {
+    nav .top-bar-section .left {
+        float: none;
+    }
+    nav .top-bar-section ul, nav .top-bar-section li {
+        display: block;
+        text-align: center;
+    }
+    nav .bottom li {
+        display: block;
+        padding: 5px 0;
+    }
+    nav .bottom li:last-child {
+        border-bottom: none ;
+    }
+
+    .headline-heading div{
 		display:none;
 	}
 	.icon-boston {
@@ -434,7 +461,15 @@ footer p {
 		bottom: 0;
 	}
 }
+@media only screen and (max-width: 559px) {
+    .top-bar-section ul li {
+        display: block;
+        float: none;
+    }
+}
+@media only screen and (max-width: 950px) {
 
+}
 
 /* WP Classes */
 .top-bar-section li.current_page_item a:not(.button)
@@ -444,4 +479,26 @@ footer p {
 
 .top-bar-section li.current_page_item a:hover {
 	background:#333;
+}
+/*Misc tweaks*/
+
+.clear {
+    clear: both;
+}
+#nw_logo {
+    background: url("img/neueway-logo.png");
+    opacity: .25;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=25)";
+    display: block;
+    margin: auto;
+    margin-top: 6px;
+    width: 200px;
+    height: 27px;
+}
+#nw_logo:hover {
+    opacity: .75;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+}
+.real-customers h4{
+    margin-top: 40px;
 }

@@ -29,16 +29,17 @@
                     </a>
                     <div class="sub-heading">Massachusetts Contractor Certification</div>
                 </div>
-                <div class="large-4 columns">
-                    <div class="headline-heading">Be a smart super - call (508) 488-9874 today!</div>
+                <div class="large-5 columns headline-heading">
+                    <div class="">Be a smart super - call (508) 488-9874 today!</div>
                 </div>
-                <div class="large-3 columns">
+                <div class="large-2 columns">
                     <i class="icon-boston"></i>
                 </div>
             </div>
                 <nav class="nav-background">
                     <div class="large-12 column row top-bar-section">
-                        <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' =>'left' ) ); ?>
+                        <?php
+                        wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' =>'left' ) ); ?>
                     </div>
                 </nav>
 
