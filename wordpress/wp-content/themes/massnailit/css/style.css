@@ -110,6 +110,7 @@ nav {
 .top-bar-section .left {
     left: -100px;
     position: relative;
+    padding-right: -100px;
 }
 .top-bar-section ul li {
     float: left;
@@ -478,7 +479,12 @@ nav .bottom li a:hover {
     }
 }
 @media only screen and (max-width: 950px) {
+    .top-bar-section .left {
+        left: 0;
+        right: 0;
+        top: 0;
 
+    }
 }
 
 /* WP Classes */
