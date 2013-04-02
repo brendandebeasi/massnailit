@@ -4,7 +4,7 @@
 if (strpos($_SERVER['HTTP_HOST'], 'dev.massnailit.com') !== false && $_SERVER['HTTP_HOST'] == 1337) {
     $config_file = 'config/dev.php';
 }
-elseif (strpos($_SERVER['HTTP_HOST'], 'dev.mni.neueway.com') !== false && strpos($_SERVER['HTTP_HOST'], 'dev.neueway.com') !== false) {
+elseif (strpos($_SERVER['HTTP_HOST'], 'dev.mni.neueway.com') !== false ||  strpos($_SERVER['HTTP_HOST'], 'dev.neueway.com') !== false) {
     $config_file = 'config/dev3.php';
 }
 elseif (strpos($_SERVER['HTTP_HOST'], '127.0.0.1') !== false) {
