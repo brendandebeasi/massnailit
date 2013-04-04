@@ -1,6 +1,3 @@
-massnailit
-==========
-
 MassNailIt WordPress Theme Instructions
 ==========
 
