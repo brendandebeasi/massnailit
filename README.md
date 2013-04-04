@@ -3,7 +3,7 @@ MassNailIt WordPress Theme Instructions
 
 Dependencies
 -------------------------
-massnailit WP theme depends on the meta-box plugin. Upload the plugin into your plugins directory and enable the plugin.
+massnailit WP theme depends on the `meta-box` plugin. Upload the plugin into your `plugins/` directory and enable the plugin.
 
 
 Installation
@@ -14,7 +14,7 @@ Frontpage Carousel / Featured Posts
 -------------------------
 Posts and pages can be set as featured items on the frontpage carousel. Check the frontpage carousel option located on a post/page and then upload a featured image. 
 
-The function for this custom setting is located in `functions.php` and called in `index.php`. Depends on the meta-box plugin.
+The function for this custom setting is located in `functions.php` and called in `index.php`. Depends on the `meta-box` plugin.
 
 
 MNI Settings
