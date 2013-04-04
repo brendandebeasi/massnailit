@@ -3,8 +3,4 @@
 .htaccess
 .idea/*
 .DS_Store
-<<<<<<< HEAD
 is-test/.DS_Store
-=======
-is-test/.DS_Store
->>>>>>> Added theme functions
