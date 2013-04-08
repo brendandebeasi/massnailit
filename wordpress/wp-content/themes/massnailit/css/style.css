@@ -79,7 +79,7 @@ header {
 	text-shadow: 0px 1px 0px #fff;
 	color: #4b0404;
 	font-weight:bold;
-	margin-top:33px;
+	margin-top:20px;
 
 }
 
@@ -88,8 +88,7 @@ header {
 	width:147px;
 	height:93px;
 	display:block;
-	margin-top:-10px;
-    float: right;
+    line-height: 93px;
 }
 
 .nav-background {
@@ -107,14 +106,6 @@ nav {
 .top-bar-section ul {
 	list-style:none;
 }
-.top-bar-section .left {
-    left: -100px;
-    position: relative;
-    padding-right: -100px;
-}
-.top-bar-section ul li {
-    float: left;
-}
 
 .top-bar-section li a:not(.button) {
 	background:#2b2b2b;
@@ -123,15 +114,10 @@ nav {
 	padding:5px 15px;
 }
 
-.top-bar-section li.active a:not(.button) {
+.top-bar-section li.active a:not(.button), .top-bar-section li a:hover {
 	background: #414141;
 }
-.top-bar-section li > a {
-    color: #ffffff;
-}
-.top-bar-section li > a:hover  {
-    color: #b4b4b4;
-}
+
 /** Homepage **/
 
 .custom-csl {
@@ -211,9 +197,11 @@ text-align: center;
 }
 
 .fp-bottom-section h2 {
-	color: #57000c;
+	color: #1a57a3;
 	font-size:1.2em;
-	margin:10px 0 20px;
+	border-bottom:1px solid #e6e6e6;
+	padding-bottom:5px;
+	margin:10px 0 15px;
 }
 
 .fp-bottom-section h4 {
@@ -243,6 +231,8 @@ text-align: center;
 	margin-right: 5px;
 	padding: 5px 5px 0;
 	clear:both;
+	width:70px;
+	height:70px;
 }
 
 .testimonial p {
@@ -316,7 +306,7 @@ div.article {
 	margin-bottom:10px;
 }
 
-.author {
+.article .author {
 	font-size:.9em;
 	color: #afa6a6;
 	margin-bottom:10px;
@@ -415,57 +405,40 @@ footer p {
 
 }
 
-nav .bottom ul {
+.nav-footer {
+	margin: 20px 0;
 	background: #d0d0d0;
-    display: block;
+	padding: 20px;
+	margin-right:-24px;
+	width:100%;
 }
-nav .bottom li {
-    display: inline-block;
-    padding: 20px;
-    border-top:1px solid #e2e2e2;
-    border-bottom:1px solid #b4b4b4;
-    text-align: center;
+.nav-footer ul{
+	list-style:none;
 }
-nav .bottom li:hover {
-    background: #d0d0d0;
+.nav-footer li {
+	float:left;
+	font-size:1em;
+	margin-right:20px;
+}
 
+.nav-footer li:last-child {
+	margin-right:0px;
 }
-nav .bottom li a {
-    display: block;
-	color: #666666;
-}
-nav .bottom li a:hover {
-    color: #780800;
+
+.nav-footer a {
+	color: #373737;
 }
 
 @media only screen and (max-width: 467px) {
 	.icon-boston {
 		display:none;
 	}
-	.headline-heading div {
+	.headline-heading {
 		display:block
 	}
-    .sub-heading {
-        text-align: center;
-    }
 }
-@media only screen and (max-width: 549px) {
-    nav .top-bar-section .left {
-        float: none;
-    }
-    nav .top-bar-section ul, nav .top-bar-section li {
-        display: block;
-        text-align: center;
-    }
-    nav .bottom li {
-        display: block;
-        padding: 5px 0;
-    }
-    nav .bottom li:last-child {
-        border-bottom: none ;
-    }
-
-    .headline-heading div{
+@media only screen and (max-width: 767px) {
+	.headline-heading {
 		display:none;
 	}
 	.icon-boston {
@@ -474,20 +447,6 @@ nav .bottom li a:hover {
 		top: -75px;
 		bottom: 0;
 	}
-}
-@media only screen and (max-width: 559px) {
-    .top-bar-section ul li {
-        display: block;
-        float: none;
-    }
-}
-@media only screen and (max-width: 950px) {
-    .top-bar-section .left {
-        left: 0;
-        right: 0;
-        top: 0;
-
-    }
 }
 
 /* WP Classes */
@@ -498,26 +457,4 @@ nav .bottom li a:hover {
 
 .top-bar-section li.current_page_item a:hover {
 	background:#333;
-}
-/*Misc tweaks*/
-
-.clear {
-    clear: both;
-}
-#nw_logo {
-    background: url("img/neueway-logo.png");
-    opacity: .25;
-    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=25)";
-    display: block;
-    margin: auto;
-    margin-top: 6px;
-    width: 200px;
-    height: 27px;
-}
-#nw_logo:hover {
-    opacity: .75;
-    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
-}
-.real-customers h4{
-    margin-top: 40px;
 }
