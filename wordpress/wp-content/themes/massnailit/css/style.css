@@ -445,6 +445,9 @@ nav .bottom li a:hover {
 	.headline-heading div {
 		display:block
 	}
+    .sub-heading {
+        text-align: center;
+    }
 }
 @media only screen and (max-width: 549px) {
     nav .top-bar-section .left {
