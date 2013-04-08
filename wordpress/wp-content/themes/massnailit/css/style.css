@@ -79,7 +79,7 @@ header {
 	text-shadow: 0px 1px 0px #fff;
 	color: #4b0404;
 	font-weight:bold;
-	margin-top:20px;
+	margin-top:33px;
 
 }
 
@@ -88,7 +88,8 @@ header {
 	width:147px;
 	height:93px;
 	display:block;
-    line-height: 93px;
+	margin-top:-10px;
+    float: right;
 }
 
 .nav-background {
@@ -114,10 +115,15 @@ nav {
 	padding:5px 15px;
 }
 
-.top-bar-section li.active a:not(.button), .top-bar-section li a:hover {
+.top-bar-section li.active a:not(.button) {
 	background: #414141;
 }
-
+.top-bar-section li > a {
+    color: #ffffff;
+}
+.top-bar-section li > a:hover  {
+    color: #b4b4b4;
+}
 /** Homepage **/
 
 .custom-csl {
@@ -405,40 +411,57 @@ footer p {
 
 }
 
-.nav-footer {
-	margin: 20px 0;
+nav .bottom ul {
 	background: #d0d0d0;
-	padding: 20px;
-	margin-right:-24px;
-	width:100%;
+    display: block;
 }
-.nav-footer ul{
-	list-style:none;
+nav .bottom li {
+    display: inline-block;
+    padding: 20px;
+    border-top:1px solid #e2e2e2;
+    border-bottom:1px solid #b4b4b4;
+    text-align: center;
 }
-.nav-footer li {
-	float:left;
-	font-size:1em;
-	margin-right:20px;
-}
+nav .bottom li:hover {
+    background: #d0d0d0;
 
-.nav-footer li:last-child {
-	margin-right:0px;
 }
-
-.nav-footer a {
-	color: #373737;
+nav .bottom li a {
+    display: block;
+	color: #666666;
+}
+nav .bottom li a:hover {
+    color: #780800;
 }
 
 @media only screen and (max-width: 467px) {
 	.icon-boston {
 		display:none;
 	}
-	.headline-heading {
+	.headline-heading div {
 		display:block
 	}
+    .sub-heading {
+        text-align: center;
+    }
 }
-@media only screen and (max-width: 767px) {
-	.headline-heading {
+@media only screen and (max-width: 549px) {
+    nav .top-bar-section .left {
+        float: none;
+    }
+    nav .top-bar-section ul, nav .top-bar-section li {
+        display: block;
+        text-align: center;
+    }
+    nav .bottom li {
+        display: block;
+        padding: 5px 0;
+    }
+    nav .bottom li:last-child {
+        border-bottom: none ;
+    }
+
+    .headline-heading div{
 		display:none;
 	}
 	.icon-boston {
@@ -447,6 +470,20 @@ footer p {
 		top: -75px;
 		bottom: 0;
 	}
+}
+@media only screen and (max-width: 559px) {
+    .top-bar-section ul li {
+        display: block;
+        float: none;
+    }
+}
+@media only screen and (max-width: 950px) {
+    .top-bar-section .left {
+        left: 0;
+        right: 0;
+        top: 0;
+
+    }
 }
 
 /* WP Classes */
@@ -457,4 +494,26 @@ footer p {
 
 .top-bar-section li.current_page_item a:hover {
 	background:#333;
+}
+/*Misc tweaks*/
+
+.clear {
+    clear: both;
+}
+#nw_logo {
+    background: url("img/neueway-logo.png");
+    opacity: .25;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=25)";
+    display: block;
+    margin: auto;
+    margin-top: 6px;
+    width: 200px;
+    height: 27px;
+}
+#nw_logo:hover {
+    opacity: .75;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+}
+.real-customers h4{
+    margin-top: 40px;
 }
