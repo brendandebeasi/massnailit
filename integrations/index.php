@@ -69,7 +69,23 @@ switch($action) {
 
         break;
 
-
+    case 'lms-get-courses-for-user':
+        if(isset($_GET['lms_id'])) {
+            $lms_id = $_GET['lms_id'];
+            $courses = LMS_getCoursesForUser($lms_id);
+            echo json_encode($courses);
+        }
+        else die('LMS ID not set.');
+        break;
+    case 'lms-assign-course-to-user':
+        if(isset($_GET['lms_id']) && isset($_GET['course_id'])) {
+            $lms_id = $_GET['lms_id'];
+            $course_id = $_GET['course_id'];
+            $courses = LMS_assignCourseToUser($lms_id,$course_id);
+            echo json_encode($courses);
+        }
+        else die('LMS ID not set.');
+        break;
 
     default:
         die("Invalid action set");
@@ -174,6 +190,52 @@ function LMS_getCourses() {
     $pest = new PestJSON('https://api.litmos.com/v1.svc');
     try {
         $courses = $pest->get('/courses?apikey=E8C3D63F-A273-461A-9691-37FC53EED941&source=mni',array());
+        $response = ['success'=>1,'message'=>null,'data'=>$courses];
+    }
+    catch(Pest_Conflict $e) {
+        $msg = json_decode($e->getMessage());
+        if(isset($msg->Detail)) $msg = $msg->Detail;
+        else $msg = 'An unknown error occurred.';
+        $response = ['success'=>0,'message'=>$msg];
+    }
+
+    return $response;
+}
+
+function LMS_getCoursesForUser($lms_id) {
+    $response = ['success'=>0,'message'=>"An unknown error occured."];
+
+    require_once('src/pest/PestJSON.php');
+    $pest = new PestJSON('https://api.litmos.com/v1.svc');
+    try {
+        $courses = $pest->get('/users/'.$lms_id.'/courses?apikey=E8C3D63F-A273-461A-9691-37FC53EED941&source=mni',array());
+        $response = ['success'=>1,'message'=>null,'data'=>$courses];
+    }
+    catch(Pest_Conflict $e) {
+        $msg = json_decode($e->getMessage());
+        if(isset($msg->Detail)) $msg = $msg->Detail;
+        else $msg = 'An unknown error occurred.';
+        $response = ['success'=>0,'message'=>$msg];
+    }
+
+    return $response;
+}
+
+function LMS_assignCourseToUser($lms_id,$course_id) {
+    $response = ['success'=>0,'message'=>"An unknown error occured."];
+
+    require_once('src/pest/PestJSON.php');
+    $pest = new PestJSON('https://api.litmos.com/v1.svc');
+    $data = [
+        'Course' => [
+            'Id'=>$course_id
+        ]
+    ];
+
+    try {
+
+        $courses = $pest->post('/users/'.$lms_id.'/courses?apikey=E8C3D63F-A273-461A-9691-37FC53EED941&source=mni',$data);
+        print_r($courses);
         $response = ['success'=>1,'message'=>null,'data'=>$courses];
     }
     catch(Pest_Conflict $e) {
