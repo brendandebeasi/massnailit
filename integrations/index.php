@@ -58,11 +58,16 @@ switch($action) {
             if(isset($_GET['password'])) $password = $_GET['password'];
             else $password = null;
 
-            $user_response = LM_createUser($name_first, $name_last, $email,$username,$password);
+            $user_response = LMS_createUser($name_first, $name_last, $email,$username,$password);
             echo json_encode($user_response);
         }
         break;
 
+    case 'lms-get-courses':
+        $courses = LMS_getCourses();
+        echo json_encode($courses);
+
+        break;
 
 
 
@@ -125,7 +130,7 @@ function IS_getUserByEmail($email) {
     return $response;
 }
 
-function LM_createUser($first_name,$last_name,$email_address,$username=null,$password) {
+function LMS_createUser($first_name,$last_name,$email_address,$username=null,$password) {
     $response = ['success'=>0,'message'=>"An unknown error occured."];
 
     require_once('src/pest/PestJSON.php');
@@ -151,6 +156,25 @@ function LM_createUser($first_name,$last_name,$email_address,$username=null,$pas
     try {
         $user = $pest->post('/users?apikey=E8C3D63F-A273-461A-9691-37FC53EED941&source=mni',$data);
         $response = ['success'=>1,'message'=>null,'data'=>['response'=>json_decode($user),'id'=>$user['Id']]];
+    }
+    catch(Pest_Conflict $e) {
+        $msg = json_decode($e->getMessage());
+        if(isset($msg->Detail)) $msg = $msg->Detail;
+        else $msg = 'An unknown error occurred.';
+        $response = ['success'=>0,'message'=>$msg];
+    }
+
+    return $response;
+}
+
+function LMS_getCourses() {
+    $response = ['success'=>0,'message'=>"An unknown error occured."];
+
+    require_once('src/pest/PestJSON.php');
+    $pest = new PestJSON('https://api.litmos.com/v1.svc');
+    try {
+        $courses = $pest->get('/courses?apikey=E8C3D63F-A273-461A-9691-37FC53EED941&source=mni',array());
+        $response = ['success'=>1,'message'=>null,'data'=>$courses];
     }
     catch(Pest_Conflict $e) {
         $msg = json_decode($e->getMessage());
