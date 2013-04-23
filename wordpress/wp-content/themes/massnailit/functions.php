@@ -1,4 +1,5 @@
-<?php 
+<?php
+//Carousel Meta Box
 add_action( 'admin_init', 'rw_register_featured_image_meta_box' );
 function rw_register_featured_image_meta_box()
 {

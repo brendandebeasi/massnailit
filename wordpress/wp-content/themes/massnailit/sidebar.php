@@ -2,9 +2,11 @@
                     <form class="short-form custom custom-csl">
                         <fieldset>
                             <h3>Get Certified Today!</h3>
-                      
-                            <input type="text" name="firstName" placeholder="Name" />                       
-                   
+
+                            <input class="left half fName" type="text" name="fName" placeholder="First Name" />
+                            <input class="right half lName" type="text" name="lName" placeholder="Last Name" />
+                            <div class="clear"></div>
+
                             <input name="email" placeholder="Email Address" type="text" />
                         
                     

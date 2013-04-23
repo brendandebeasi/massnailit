@@ -2,7 +2,15 @@
 body {
 	background: url(img/main-bg.jpg) repeat;
 }
-
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.clear {
+    clear: both;
+}
 p, ol, ul, li, blockquote, em, strong {
 	font-family:"Helvetica Neue", Helvetica, sans-serif;
 	color: #5f5f5f;
@@ -176,12 +184,18 @@ margin-bottom: 20px;
 margin-top: -5px;
 text-align: center;
 }
-
-#inputname {
-	background:url(img/icon-user.png) left no-repeat;
+input.half {
+    width: 48%;
+}
+input.fName {
+	background-image: url(img/icon-user.png);
+    background-repeat: no-repeat;
+    background-position: 5px center;
 	padding-left:5px;
 }
+input.lName {
 
+}
 .fp-image {
 	display:block;
 	margin:0 auto;
