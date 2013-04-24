@@ -87,7 +87,7 @@ switch($action) {
         else die('LMS ID not set.');
         break;
     case 'mni-purchase-success-callback':
-        error(json_encode($_POST));
+        file_put_contents(getcwd() . '/brendan.txt', json_encode($_POST));
         break;
     default:
         die("Invalid action set");
