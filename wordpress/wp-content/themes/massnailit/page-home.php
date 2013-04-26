@@ -53,15 +53,7 @@ Template Name: Home Template
 
         <div class="large-3 column">
             <h5>Upcoming Classes</h5>
-            <ul class="calendar">
-                <li><a href="#">February 1st @ Grafton</a></li>
-                <li><a href="#">February 1st @ Grafton</a></li>
-                <li><a href="#">February 1st @ Grafton</a></li>
-                <li><a href="#">February 1st @ Grafton</a></li>
-                <li><a href="#">February 1st @ Grafton</a></li>
-                <li><a href="#">February 1st @ Grafton</a></li>
-                <li><a href="#">February 1st @ Grafton</a></li>
-                <li><a href="#">February 1st @ Grafton</a></li>
+            <ul class="mni-upcoming-classes">
             </ul>
         </div>
     </div>

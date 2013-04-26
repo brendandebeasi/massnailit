@@ -28,8 +28,5 @@
                 '.js><\/script>')
     </script>
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/foundation.min.js"></script>
-    <script>
-
-        $(document).foundation();
-    </script>
+    <script src="<?php bloginfo('stylesheet_directory'); ?>/js/app.js"></script>
 </body>

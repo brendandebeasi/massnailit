@@ -14,7 +14,6 @@ else {
     $key = $_GET['api_key'];
     if($key != 'Callie123') die('Invalid API Key');
 }
-
 if(isset($_GET['action'])) $action = $_GET['action'];
 elseif(isset($_POST['action'])) $action = $_POST['action'];
 switch($action) {
