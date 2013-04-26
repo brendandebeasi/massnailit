@@ -15,9 +15,12 @@ function get_max_testimonials() {
 function display_testimonials() {
 	$output_testimonials = "";
 	for($i = 1; $i <= get_max_testimonials(); $i++)
-	{	
+	{
+        $img_src = esc_html(get_option("testimonial_author_photo_".$i));
+        if(is_empty($img_src)) $img_src = get_bloginfo('stylesheet_directory') . '/css/img/generic_user.png';
+
 		$output_testimonials .= "<div class=\"testimonial\">";
-		$output_testimonials .= "<img src='". esc_html(get_option("testimonial_author_photo_".$i)) . "' alt='".esc_html(get_option("testimonial_author_".$i))."' class='testimonial_photo' /><p>";
+		$output_testimonials .= "<img src='". $img_src . "' alt='".esc_html(get_option("testimonial_author_".$i))."' class='testimonial_photo' /><p>";
 		$output_testimonials .= esc_html(get_option("testimonial_desc_".$i));
 		$output_testimonials .= "<em>" . esc_html(get_option("testimonial_author_".$i)) . "</em>";
 		$output_testimonials .= "</p></div>";
