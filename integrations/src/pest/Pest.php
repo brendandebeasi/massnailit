@@ -114,9 +114,9 @@ class Pest {
     
     $curl = $this->prepRequest($curl_opts, $url);
     $body = $this->doRequest($curl);
-    
+
     $body = $this->processBody($body);
-    
+
     return $body;
   }
   
