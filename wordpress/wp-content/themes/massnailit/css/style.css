@@ -78,6 +78,9 @@ header {
 	text-shadow: 0px 1px 0px #fff;
 	font-size:1em;
 	font-weight:600;
+    padding-left: 74px;
+    text-align: center;
+    width: 309px;
 }
 
 .headline-heading {
