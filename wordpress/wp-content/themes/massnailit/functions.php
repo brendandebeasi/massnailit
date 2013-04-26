@@ -31,6 +31,11 @@ function register_header_menu() {
 }
 add_action( 'init', 'register_header_menu' );
 
+function register_footer_menu() {
+  register_nav_menu('footer-menu',__( 'Footer Menu' ));
+}
+add_action( 'init', 'register_footer_menu' );
+
 // POST THUMBNAILS //
 if (function_exists('add_theme_support')) {
     add_theme_support('post-thumbnails');

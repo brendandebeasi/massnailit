@@ -1,6 +1,6 @@
         <footer>
             <nav class="row text-center">
-                <?php wp_nav_menu( array( 'theme_location' => 'menu', 'menu_class' =>'bottom' ) ); ?>
+                <?php wp_nav_menu( array( 'theme_location' => 'footer-menu', 'menu_class' =>'bottom' ) ); ?>
             </nav>
             <div class="row">
                 <div class="footer-bottom">
