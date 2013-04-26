@@ -17,7 +17,7 @@ function display_testimonials() {
 	for($i = 1; $i <= get_max_testimonials(); $i++)
 	{
         $img_src = esc_html(get_option("testimonial_author_photo_".$i));
-        if(is_empty($img_src)) $img_src = get_bloginfo('stylesheet_directory') . '/css/img/generic_user.png';
+        if(empty($img_src)) $img_src = get_bloginfo('stylesheet_directory') . '/css/img/generic_user.png';
 
 		$output_testimonials .= "<div class=\"testimonial\">";
 		$output_testimonials .= "<img src='". $img_src . "' alt='".esc_html(get_option("testimonial_author_".$i))."' class='testimonial_photo' /><p>";
