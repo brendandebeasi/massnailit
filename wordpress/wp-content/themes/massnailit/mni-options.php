@@ -49,15 +49,20 @@ function display_home_promos()
 	echo $output_home_promos;
 }
 
-function display_tagline() {
-	$output_tagline = esc_html(get_option('tagline')); 
-	echo $output_tagline;
-}
 
+function display_tagline() {
+    $output_tagline = esc_html(get_option('tagline'));
+    echo $output_tagline;
+}
+function display_subhead_text() {
+    $output_subhead = esc_html(get_option('subhead_text'));
+    echo $output_subhead;
+}
 function mni_settings_submit(){ 
     if(isset($_POST['submit-updates']) && $_POST['submit-updates'] == "yes"){
 
 		update_option("tagline", sanitize_text_field(($_POST["tagline"])));
+		update_option("subhead_text", sanitize_text_field(($_POST["subhead_text"])));
 		update_option("mni_email", sanitize_email(($_POST["mni_email"])));
 
 		for($i = 1; $i <= get_max_promos(); $i++)
@@ -80,8 +85,9 @@ function mni_settings_submit(){
 		<input type="submit" name="Submit" value="Save Settings" class="button-primary" />
 		
 		<h2>General</h2>
-	<label class="regular-text">Email Address to Receive Emails</label><input name="mni_email" value="<?php echo esc_html(get_option("mni_email")); ?>" class="textbox_medium" size="40" type="text">
-	<label>Tagline:</label><small>Displayed on the middle header of the website.</small><textarea cols="41" rows="2" class="valid" name="tagline"><?php echo esc_html(get_option('tagline')); ?></textarea>
+	    <label class="regular-text">Email Address to Receive Emails</label><input name="mni_email" value="<?php echo esc_html(get_option("mni_email")); ?>" class="textbox_medium" size="40" type="text">
+	    <label>Tagline:</label><small>Displayed on the middle header of the website.</small><textarea cols="41" rows="2" class="valid" name="tagline"><?php echo esc_html(get_option('tagline')); ?></textarea>
+        <label>Subhead Text:</label><small>Text that displays below the MNI logo.</small><textarea cols="41" rows="2" class="valid" name="subhead_text"><?php echo esc_html(get_option('subhead_text')); ?></textarea>
 		<h2>Home Promos</h2>
 		<?php
 			for($i = 1; $i <= get_max_promos(); $i++)

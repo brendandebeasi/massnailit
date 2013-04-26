@@ -21,7 +21,7 @@
                         <i class="icon-logo"></i>
                         <i class="icon-brand"></i>
                     </a>
-                    <div class="sub-heading">Massachusetts Contractor Certification</div>
+                    <div class="sub-heading"><?php display_subhead_text(); ?></div>
                 </div>
                 <div class="large-4 columns">
                     <div class="headline-heading"><?php display_tagline();?></div>
