@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: Home Template
+*/
+?>
 <?php get_header();?>
 <div class="row main">
     <div class="row">
