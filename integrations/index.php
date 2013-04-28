@@ -18,7 +18,8 @@ if(isset($_GET['action'])) $action = $_GET['action'];
 elseif(isset($_POST['action'])) $action = $_POST['action'];
 switch($action) {
     case 'is-successful-purchase':
-        mail ( 'b@neueway.com' , 'IS Purchase', json_encode($_POST));
+        file_put_contents('/tmp/brendan.json',json_encode($_POST));
+
 
         break;
     case 'is-get-products':
