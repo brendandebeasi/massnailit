@@ -26,7 +26,7 @@ switch($action) {
         error_log(json_encode($purchased_skus));
         $LMS_courses = LMS_getCourses();
 
-        foreach($purchased_skus['data']['skus'] as $sku) {
+        foreach($purchased_skus['data'] as $sku) {
             $returnValue = preg_match('/^ON.*/', $sku, $matches);
             //see if there are any skus beginning with ON.
             if($returnValue) {
