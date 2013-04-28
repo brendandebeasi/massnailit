@@ -18,8 +18,35 @@ if(isset($_GET['action'])) $action = $_GET['action'];
 elseif(isset($_POST['action'])) $action = $_POST['action'];
 switch($action) {
     case 'is-successful-purchase':
-        file_put_contents('/tmp/brendan.json',json_encode($_POST));
+        $pi = $_POST; //purchaseinfo
+        $IS_user_id = $pi["Id"];
+        $IS_user_lms_id = $pi['lmsuid'];
+        //get list of products user has purchased
+        $purchased_skus = IS_getPurchasesForContact($IS_user_id);
 
+        $LMS_courses = LMS_getCourses();
+
+        foreach($purchased_skus as $sku) {
+            $returnValue = preg_match('/^ON.*/', $sku, $matches);
+            //see if there are any skus beginning with ON.
+            if($returnValue) {
+                //see if there is an LMS ID for the user
+                if($IS_user_lms_id == '0.0') { //if not create one
+                    $response = LMS_createUser($pi['FirstName'],$pi['LastName'],$pi['Email'],strtolower($pi['FirstName'].$pi['LastName'].$pi['Id']),generateStrongPassword());
+                    $IS_user_lms_id = $response['data']['id'];
+                    //save the litmos ID to the IS user's lms field.
+                    IS_associateWithLitmosUser($IS_user_id,$IS_user_lms_id);
+                }
+
+                //try and match the courses with the sku
+                foreach($LMS_courses as $course) {
+                    if($course['Code'] == $sku) {
+                        LMS_assignCourseToUser($IS_user_lms_id, $course['Id']);
+                    }
+                }
+
+            }
+        }
 
         break;
     case 'is-get-products':
@@ -30,7 +57,12 @@ switch($action) {
 
         break;
 
+    case 'is-get-products-for-contact':
+        if(isset($_GET['contact_id'])) $contact_id = $_GET['contact_id'];
+        else die('no contact ID set');
 
+        echo json_encode(IS_getPurchasesForContact($contact_id));
+        break;
     case 'is-link-with-lms' :
         if(isset($_GET['lms_id']) && isset($_GET['is_id'])) {
             $lms_id = $_GET['lms_id'];
@@ -111,7 +143,42 @@ switch($action) {
         die("Invalid action set");
 }
 
+function IS_getPurchasesForContact($contact_id) {
+    $skus = [];
 
+    $app = new iSDK;
+    $app->cfgCon("mni");
+
+    //get all invoices for user
+    $returnFields = ['Id'];
+    $query = ['ContactId' => $contact_id];
+    $invoices = $app->dsQuery("Invoice",1000,0,$query,$returnFields);
+    foreach($invoices as $invoice) {
+        //get all items in the invoice
+        $returnFields = ['OrderItemId'];
+        $query = ['InvoiceId' => $invoice['Id']];
+        $invoiceItems = $app->dsQuery("InvoiceItem",1000,0,$query,$returnFields);
+        //get the product ID for each item
+        foreach($invoiceItems as $item) {
+            $returnFields = ['ProductId'];
+            $query = ['Id' => $item['OrderItemId']];
+            $orderItems = $app->dsQuery("OrderItem",1000,0,$query,$returnFields);
+//            die(json_encode($item));
+            //get the sku for each product id
+            foreach($orderItems as $item) {
+                $returnFields = ['Sku'];
+                $query = ['Id' => $item['ProductId']];
+                $products = $app->dsQuery("Product",1000,0,$query,$returnFields);
+                foreach($products as $product) {
+                    $skus[$product['Sku']] = $product['Sku'];
+                }
+            }
+
+                    //
+        }
+    }
+    return ['success'=>1,'data'=>$skus];
+}
 function IS_getProductsWithPrefix($prefix=false) {
     $response = ['success'=>0,'message'=>"An unknown error occured."];
     $app = new iSDK;
@@ -282,4 +349,44 @@ function LMS_assignCourseToUser($lms_id,$course_id) {
     }
 
     return $response;
+}
+
+function generateStrongPassword($length = 9, $add_dashes = false, $available_sets = 'luds')
+{
+    $sets = array();
+    if(strpos($available_sets, 'l') !== false)
+        $sets[] = 'abcdefghjkmnpqrstuvwxyz';
+    if(strpos($available_sets, 'u') !== false)
+        $sets[] = 'ABCDEFGHJKMNPQRSTUVWXYZ';
+    if(strpos($available_sets, 'd') !== false)
+        $sets[] = '23456789';
+    if(strpos($available_sets, 's') !== false)
+        $sets[] = '!@#$%&*?';
+
+    $all = '';
+    $password = '';
+    foreach($sets as $set)
+    {
+        $password .= $set[array_rand(str_split($set))];
+        $all .= $set;
+    }
+
+    $all = str_split($all);
+    for($i = 0; $i < $length - count($sets); $i++)
+        $password .= $all[array_rand($all)];
+
+    $password = str_shuffle($password);
+
+    if(!$add_dashes)
+        return $password;
+
+    $dash_len = floor(sqrt($length));
+    $dash_str = '';
+    while(strlen($password) > $dash_len)
+    {
+        $dash_str .= substr($password, 0, $dash_len) . '-';
+        $password = substr($password, $dash_len);
+    }
+    $dash_str .= $password;
+    return $dash_str;
 }
