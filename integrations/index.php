@@ -23,10 +23,10 @@ switch($action) {
         $IS_user_lms_id = $pi['lmsuid'];
         //get list of products user has purchased
         $purchased_skus = IS_getPurchasesForContact($IS_user_id);
-
+        error_log(json_encode($purchased_skus));
         $LMS_courses = LMS_getCourses();
 
-        foreach($purchased_skus as $sku) {
+        foreach($purchased_skus['data']['skus'] as $sku) {
             $returnValue = preg_match('/^ON.*/', $sku, $matches);
             //see if there are any skus beginning with ON.
             if($returnValue) {
@@ -170,7 +170,7 @@ function IS_getPurchasesForContact($contact_id) {
                 $query = ['Id' => $item['ProductId']];
                 $products = $app->dsQuery("Product",1000,0,$query,$returnFields);
                 foreach($products as $product) {
-                    $skus[$product['Sku']] = $product['Sku'];
+                    $skus[] = $product['Sku'];
                 }
             }
 
