@@ -17,6 +17,10 @@ else {
 if(isset($_GET['action'])) $action = $_GET['action'];
 elseif(isset($_POST['action'])) $action = $_POST['action'];
 switch($action) {
+    case 'is-successful-purchase':
+        mail ( 'b@neueway.com' , 'IS Purchase', json_encode($_POST));
+
+        break;
     case 'is-get-products':
         if(isset($_GET['prefix'])) $prefix = $_GET['prefix'];
         else $prefix = false;
