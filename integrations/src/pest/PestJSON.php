@@ -26,9 +26,9 @@ require_once 'Pest.php';
 class PestJSON extends Pest
 {
   public function post($url, $data, $headers=array()) {
-//      if(is_array($data)) $data = json_encode($data);
-//      if(is_string($data)) $data = $data;
-      $data = json_encode($data);
+      if(is_array($data)) $data = json_encode($data);
+      if(is_string($data)) $data = $data;
+//      $data = json_encode($data);
     return parent::post($url, $data, $headers);
   }
   

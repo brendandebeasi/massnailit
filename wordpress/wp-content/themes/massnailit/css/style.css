@@ -107,7 +107,9 @@ header {
 	background:#2b2b2b;
 	margin-top:10px;
 }
-
+.nav-background .top-bar-section {
+    max-width: 63.2em;
+}
 nav {
 	color:#fff;
 	font-family:"Helvetica Neue", Helvetica, sans-serif;
@@ -117,6 +119,8 @@ nav {
 
 .top-bar-section ul {
 	list-style:none;
+    width: 102em;
+    overflow: hidden;
 }
 
 .top-bar-section li a:not(.button) {

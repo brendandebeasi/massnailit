@@ -261,7 +261,8 @@ function LMS_getCoursesForUser($lms_id) {
 function LMS_assignCourseToUser($lms_id,$course_id) {
     require_once('src/pest/PestJSON.php');
     $pest = new PestJSON('https://api.litmos.com/v1.svc');
-    $data = '{"Courses":["Course": {"Id":"IZ84SXaiA3s1"}]}';
+    $data = '[{"Id":"IZ84SXaiA3s1"}]';
+
 
     try {
 
