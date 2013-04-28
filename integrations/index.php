@@ -39,7 +39,7 @@ switch($action) {
                 }
 
                 //try and match the courses with the sku
-                foreach($LMS_courses as $course) {
+                foreach($LMS_courses['data'] as $course) {
                     if($course['Code'] == $sku) {
                         LMS_assignCourseToUser($IS_user_lms_id, $course['Id']);
                     }
