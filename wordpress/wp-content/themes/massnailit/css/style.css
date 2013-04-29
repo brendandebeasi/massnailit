@@ -340,8 +340,12 @@ div.article {
 }
 
 /* Pricing Tables */
-
+.pricing-table .column {
+    width: 32%;
+}
+/*
 .pricing {
+    display: block !important;
 	border-bottom:2px solid #b5b5b5;
 	border-left: 2px solid #b5b5b5;
 	border-right:2px solid #b5b5b5;
@@ -387,7 +391,7 @@ div.article {
 	margin: 5px 5px;
 	border-radius: 3px;
 }
-
+*/
 /* WP Global CSS */
 
 img.alignleft {
