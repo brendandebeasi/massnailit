@@ -306,9 +306,9 @@ div.article {
 	margin-bottom:10px;
 }
 
-.article .author {
+.author, .author p {
 	font-size:.9em;
-	color: #afa6a6;
+	color: #666;
 	margin-bottom:10px;
 }
 
