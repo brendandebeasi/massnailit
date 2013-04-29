@@ -4,7 +4,7 @@
  * This file can perform the following functions:
  * - get list of a certain type of products from IS
  * - link a user in litmos with a user in infusion soft
- * TODO:  authenticate a litmos user to use a certain program
+ * - authenticate a litmos user to use a certain program
  */
 require_once('src/conn.cfg.php');
 require_once('src/isdk.php');
@@ -333,12 +333,12 @@ function LMS_getCoursesForUser($lms_id) {
 function LMS_assignCourseToUser($lms_id,$course_id) {
     require_once('src/pest/PestJSON.php');
     $pest = new PestJSON('https://api.litmos.com/v1.svc');
-    $data = '[{"Id":"IZ84SXaiA3s1"}]';
+    $data = '[{"Id":"'.$course_id.'"}]';
 
 
     try {
 
-        $courses = $pest->post('/users/'.$lms_id.'/courses?apikey=E8C3D63F-A273-461A-9691-37FC53EED941&source=mni',$data);
+        $courses = $pest->posat('/users/'.$lms_id.'/courses?apikey=E8C3D63F-A273-461A-9691-37FC53EED941&source=mni',$data);
         $response = ['success'=>1,'message'=>null,'data'=>$courses];
     }
     catch(Pest_Conflict $e) {
