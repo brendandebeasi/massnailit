@@ -1,6 +1,6 @@
 //MNI Application
 //I handle all the API functions that are used on the MNI site. I return product listings, course dates, etc
-$('document').ready(function() {
+$(document).ready(function() {
     $(document).foundation();
     var integration_server_address = 'http://i.dev.mni.neueway.com/' //TODO: Make this dynamic at some point
     var api_key = 'Callie123';
