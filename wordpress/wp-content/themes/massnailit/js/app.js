@@ -25,4 +25,5 @@ $('document').ready(function() {
 //        var upcomingClasses = makeAPIRequest('mni-get-products',{})
 
     }
+    $('.price-table.online').html($('.price-table-original.online').html());
 });

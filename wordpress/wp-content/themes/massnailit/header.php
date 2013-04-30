@@ -12,6 +12,102 @@
 
 
 <body>
+<div class="price-table-original online hidden">
+    <a class="column" href=
+    "https://rd130.infusionsoft.com/app/manageCart/addProduct?productId=9"
+       target="_blank">
+
+
+        <div class="title">
+            6hr Training Course
+        </div>
+
+        <div class="description">
+            Lorem ipsum dolor sit amet, consectetur adipisicign elit, sed do
+            diusmod tempor incididunt ut lavore et dolore magna aliqua
+        </div>
+
+        <div class="purchase-button">
+            <div class="title left">
+                Start 6hr Course
+            </div>
+
+            <div class="price right">
+                $69
+            </div>
+
+            <div class="clear"></div>
+
+
+        </div></a>
+
+    <a class="column" href=
+    "https://rd130.infusionsoft.com/app/manageCart/addProduct?productId=9"
+       target="_blank"></a><br>
+    <a class="column featured" href=
+    "https://rd130.infusionsoft.com/app/manageCart/addProduct?productId=5"
+       target="_blank"></a><a class="column featured" href=
+    "https://rd130.infusionsoft.com/app/manageCart/addProduct?productId=5"
+                              target="_blank">
+        <div class="title">
+            12hr Training Course
+        </div>
+
+        <div class="description">
+            Lorem ipsum dolor sit amet, consectetur adipisicign elit, sed do
+            diusmod tempor incididunt ut lavore et dolore magna aliqua
+        </div>
+
+        <div class="purchase-button">
+            <div class="title left">
+                Start 12hr Course
+            </div>
+
+            <div class="price right">
+                $99
+            </div>
+
+            <div class="clear"></div>
+
+
+        </div></a>
+
+    <a class="column featured" href=
+    "https://rd130.infusionsoft.com/app/manageCart/addProduct?productId=5"
+       target="_blank"></a><br>
+    <a class="column" href=
+    "https://rd130.infusionsoft.com/app/manageCart/addProduct?productId=3"
+       target="_blank"></a><a class="column" href=
+    "https://rd130.infusionsoft.com/app/manageCart/addProduct?productId=3"
+                              target="_blank">
+        <div class="title">
+            10hr Training Course
+        </div>
+
+        <div class="description">
+            Lorem ipsum dolor sit amet, consectetur adipisicign elit, sed do
+            diusmod tempor incididunt ut lavore et dolore magna aliqua
+        </div>
+
+        <div class="purchase-button">
+            <div class="title left">
+                Start 10hr Course
+            </div>
+
+            <div class="price right">
+                $79
+            </div>
+
+            <div class="clear"></div>
+
+
+        </div></a>
+
+    <a class="column" href=
+    "https://rd130.infusionsoft.com/app/manageCart/addProduct?productId=3"
+       target="_blank"></a>
+</div>
+
     <div id="container">
         <header>
             <div class="row">
