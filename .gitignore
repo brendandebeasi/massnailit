@@ -13,3 +13,4 @@ wordpress/wp-content/cache/config
 wordpress/wp-content/cache/config/*
 wordpress/wp-content/cache/tmp
 wordpress/wp-content/cache/tmp/*
+wordpress/wp-content*
