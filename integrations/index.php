@@ -161,7 +161,7 @@ function IS_getPurchasesForContact($contact_id) {
         //get the product ID for each item
         foreach($invoiceItems as $item) {
             $returnFields = ['ProductId'];
-            $query = ['Id' => $item['OrderItemId']];
+            $query = ['Id' => $item['OrderItemId'],'ItemType'=>'4'];
             $orderItems = $app->dsQuery("OrderItem",1000,0,$query,$returnFields);
 //            die(json_encode($item));
             //get the sku for each product id
