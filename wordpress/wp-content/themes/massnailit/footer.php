@@ -22,7 +22,7 @@
         </div>
     </div>
 
-    <script src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery.min.js"></script>
+    <script src="<?php bloginfo('stylesheet_directory'); ?>/js/vendor/jquery.js"></script>
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/foundation.min.js"></script>
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/app.js"></script>
 </body>
