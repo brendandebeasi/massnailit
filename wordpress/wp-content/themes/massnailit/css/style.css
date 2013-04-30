@@ -50,6 +50,68 @@ p, ol, ul, li, blockquote, em, strong {
 	margin-bottom: 1em;
 	clear:both;
 }
+/* PRICE TABLE */
+.price-table {
+    margin: auto;
+}
+.price-table a.column {
+    color: #929292;
+}
+.price-table .column:first-child {
+    margin-left: 3%;
+}
+.price-table .column {
+    border-radius: 5px;
+    background: #f3f3f3;
+    display: block;
+    width: 29%;
+    padding: 10px;
+    border: 2px solid #808080;
+    position: relative;
+    min-height: 150px;
+    margin-right: 3%;
+
+}
+.price-table .column.featured {
+    border-color: #a7fd87;
+}
+.price-table .column .title {
+    color: #3d3d3d;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13pt;
+    margin-bottom: 10px;
+}
+.price-table .column .title .small {
+    font-size: 8pt;
+    color: #447038;
+}
+.price-table .column .description {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 12pt;
+    margin-bottom: 10px;
+}
+.price-table .column .purchase-button {
+    margin: 3px;
+    margin-bottom: 0;
+    height: 35px;
+    line-height: 35px;
+    background: #237ae6;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0 12px;
+    color: #ffffff;
+
+}
+.price-table .column .purchase-button .title {
+    margin: 0;
+    color: #ffffff;
+}
+.price-table .column .purchase-button .price {
+
+}
 /**
 ** HEADER **
 **/
@@ -506,6 +568,18 @@ nav .bottom li a:hover {
     .top-bar-section ul li {
         display: block;
         float: none;
+    }
+}
+@media only screen and (max-width: 759px) {
+    .price-table .column {
+        width: 100%;
+    }
+    .price-table .column {
+        margin: 0;
+        margin-bottom: 5px;
+    }
+    .price-table .column:first-child {
+        margin-left: 0;
     }
 }
 @media only screen and (max-width: 950px) {
