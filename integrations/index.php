@@ -258,7 +258,7 @@ function LMS_createUser($first_name,$last_name,$email_address,$username=null,$pa
     ];
     try {
         $user = $pest->post('/users?apikey=E8C3D63F-A273-461A-9691-37FC53EED941&source=mni',$data);
-        $response = ['success'=>1,'message'=>null,'data'=>['response'=>json_decode($user),'id'=>$user['Id']]];
+        $response = ['success'=>1,'message'=>null,'data'=>['response'=>$user,'id'=>$user['Id']]];
     }
     catch(Pest_Conflict $e) {
         $msg = json_decode($e->getMessage());
