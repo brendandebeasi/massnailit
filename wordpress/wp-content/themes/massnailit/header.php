@@ -19,7 +19,7 @@
         </div>
 
         <div class="description">
-            A 12 hour online CSL training course.
+            A 6 hour online CSL training course.
         </div>
 
         <div class="purchase-button">
