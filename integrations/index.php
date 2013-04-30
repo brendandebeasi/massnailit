@@ -338,7 +338,7 @@ function LMS_assignCourseToUser($lms_id,$course_id) {
 
     try {
 
-        $courses = $pest->posat('/users/'.$lms_id.'/courses?apikey=E8C3D63F-A273-461A-9691-37FC53EED941&source=mni',$data);
+        $courses = $pest->post('/users/'.$lms_id.'/courses?apikey=E8C3D63F-A273-461A-9691-37FC53EED941&source=mni',$data);
         $response = ['success'=>1,'message'=>null,'data'=>$courses];
     }
     catch(Pest_Conflict $e) {
