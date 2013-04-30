@@ -22,11 +22,7 @@
         </div>
     </div>
 
-    <script>
-        document.write('<script src=' +
-                ('__proto__' in {} ? '<?php bloginfo('stylesheet_directory'); ?>/js/vendor/zepto' : '<?php bloginfo('stylesheet_directory'); ?>/js/vendor/jquery') +
-                '.js><\/script>')
-    </script>
+    <script src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery.min.js"></script>
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/foundation.min.js"></script>
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/app.js"></script>
 </body>
