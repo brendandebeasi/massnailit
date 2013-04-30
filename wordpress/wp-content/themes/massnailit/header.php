@@ -34,7 +34,7 @@
             <div class="clear"></div>
         </div>
     </a>
-    <a class="column featured" href="https://rd130.infusionsoft.com/app/manageCart/addProduct?productId=5" target="_blank">
+    <a class="column featured" href="https://rd130.infusionsoft.com/app/manageCart/addProduct?productId=3" target="_blank">
         <div class="title">
             12hr Training Course
             <span class="small">(Best Value)</span>
@@ -56,7 +56,7 @@
             <div class="clear"></div>
         </div>
     </a>
-    <a class="column" href="https://rd130.infusionsoft.com/app/manageCart/addProduct?productId=3" target="_blank">
+    <a class="column" href="https://rd130.infusionsoft.com/app/manageCart/addProduct?productId=5" target="_blank">
         <div class="title">
             10hr Training Course
         </div>
