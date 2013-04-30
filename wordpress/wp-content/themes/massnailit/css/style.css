@@ -343,6 +343,9 @@ div.article {
 .pricing-table .column {
     width: 32%;
 }
+.pricing-table  p {
+    display: none;
+}
 /*
 .pricing {
     display: block !important;
