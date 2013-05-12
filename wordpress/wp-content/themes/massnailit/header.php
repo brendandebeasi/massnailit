@@ -86,8 +86,10 @@
             <div class="row">
                 <div class="large-5 columns">
                     <a class="brand" href="<?php bloginfo('wpurl'); ?>">
-                        <i class="icon-logo"></i>
-                        <i class="icon-brand"></i>
+                        <a href="/">
+                            <i class="icon-logo"></i>
+                            <i class="icon-brand"><img src="<?php bloginfo('stylesheet_directory'); ?>/css/img/mass-nail-it.png" alt=""/></i>
+                        </a>
                     </a>
                     <div class="sub-heading"><?php display_subhead_text(); ?></div>
                 </div>

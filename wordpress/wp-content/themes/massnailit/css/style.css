@@ -137,7 +137,6 @@ header {
 	padding-top:10px;
 }
 .icon-logo {
-	background: url(img/mni-logo.png) no-repeat;
 	width: 63px;
 	height:78px;
 	display:block;
@@ -146,7 +145,7 @@ header {
 	margin:0;
 }
 .icon-brand{
-	background: url(img/mass-nail-it.png) no-repeat;
+	/*background: url(img/mass-nail-it.png) no-repeat;*/
 	width:242px;
 	height:43px;
 	display:block;
