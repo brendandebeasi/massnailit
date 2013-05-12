@@ -7,7 +7,7 @@ function IS_getProductFromURL() {
     $IS_product =  '/app/storeFront/showProductDetail?productId=';
 
     if(isset($_GET['pid'])) $return =  $IS_cartBase . $IS_product . $_GET['pid']; //online courses
-    if(isset($_GET['cid'])) $return = $IS_cartBase . $IS_category . $_GET['cid']; //online courses
+    elseif(isset($_GET['cid'])) $return = $IS_cartBase . $IS_category . $_GET['cid']; //online courses
     else $return = $IS_cartBase . $IS_category . '3';
 
     $mni_data = [];
