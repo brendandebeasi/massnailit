@@ -137,6 +137,7 @@ header {
 	padding-top:10px;
 }
 .icon-logo {
+	background: url(img/mni-logo.png) no-repeat;
 	width: 63px;
 	height:78px;
 	display:block;
