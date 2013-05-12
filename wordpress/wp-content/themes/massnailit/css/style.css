@@ -2,6 +2,10 @@ a {
     font-weight: bold;
     color: rgb(111, 84, 0);
 }
+a:hover {
+
+    color: rgb(74, 55, 0);
+}
 body {
 	background: url(img/main-bg.jpg) repeat;
 }
