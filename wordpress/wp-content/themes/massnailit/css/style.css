@@ -603,12 +603,15 @@ nav .bottom li a:hover {
         margin-left: 0;
     }
 }
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1023px) {
     .top-bar-section .left {
         left: 0;
         right: 0;
         top: 0;
 
+    }
+    .top-bar-section li {
+        float: left;
     }
 }
 
