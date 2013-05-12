@@ -161,6 +161,8 @@ header {
 	font-size:1em;
 	font-weight:600;
     padding-left: 74px;
+    position: relative;
+    top: 10px;
     text-align: center;
     width: 309px;
 }
