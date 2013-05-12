@@ -7,7 +7,7 @@
                     <?php while (have_posts()) : the_post(); ?>
                         <h1><?php the_title();?></h1>
 
-                        <div class="author">Posted <?php the_date();?> // <?php the_tags();?></div>
+                        <div class="author">Posted on <?php the_date();?></div>
 
                         <div class="divider"></div>
 

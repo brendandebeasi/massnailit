@@ -396,6 +396,11 @@ box-shadow: 1px 1px #ccc;
 	background: #fff;
 	padding:10px;
 }
+.content-inner .author {
+    font-size: 10pt;
+    position: relative;
+    top: -10px;
+}
 
 .content-inner h1 {
 	color: #35375f;
