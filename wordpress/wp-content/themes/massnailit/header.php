@@ -13,71 +13,72 @@
 
 <body>
 <div class="price-table-original online hidden">
-    <a class="column" href="https://rd130.infusionsoft.com/app/manageCart/addProduct?productId=9" target="_blank">
-        <div class="title">
-            6hr Training Course
-        </div>
-
-        <div class="description">
-            A 6 hour online CSL training course.
-        </div>
-
-        <div class="purchase-button">
-            <div class="title left">
-                Start 6hr Course
-            </div>
-
-            <div class="price right">
-                $69
-            </div>
-
-            <div class="clear"></div>
-        </div>
-    </a>
-    <a class="column featured" href="https://rd130.infusionsoft.com/app/manageCart/addProduct?productId=3" target="_blank">
-        <div class="title">
-            12hr Training Course
-            <span class="small">(Best Value)</span>
-        </div>
-
-        <div class="description">
-            A 12 hour online CSL training course.
-        </div>
-
-        <div class="purchase-button">
-            <div class="title left">
-                Start 12hr Course
-            </div>
-
-            <div class="price right">
-                $99
-            </div>
-
-            <div class="clear"></div>
-        </div>
-    </a>
-    <a class="column" href="https://rd130.infusionsoft.com/app/manageCart/addProduct?productId=5" target="_blank">
-        <div class="title">
-            10hr Training Course
-        </div>
-
-        <div class="description">
-            A 10 hour online CSL training course.
-        </div>
-
-        <div class="purchase-button">
-            <div class="title left">
-                Start 10hr Course
-            </div>
-
-            <div class="price right">
-                $79
-            </div>
-
-            <div class="clear"></div>
-        </div>
-    </a>
-    <div class="clear"></div>
+<!--    <a class="column" href="https://rd130.infusionsoft.com/app/manageCart/addProduct?productId=9" target="_blank">-->
+<!--        <div class="title">-->
+<!--            6hr Course-->
+<!--        </div>-->
+<!---->
+<!--        <div class="description">-->
+<!--            Training for the Construction Supervisor Specialty License-->
+<!--        </div>-->
+<!---->
+<!--        <div class="purchase-button">-->
+<!--            <div class="title left">-->
+<!--                Start Now-->
+<!--            </div>-->
+<!---->
+<!--            <div class="price right">-->
+<!--                $69-->
+<!--            </div>-->
+<!---->
+<!--            <div class="clear"></div>-->
+<!--        </div>-->
+<!---->
+<!--    </a>-->
+<!--    <a class="column featured" href="https://rd130.infusionsoft.com/app/manageCart/addProduct?productId=3" target="_blank">-->
+<!--        <div class="title">-->
+<!--            12hr Course-->
+<!--            <span class="small">(Best Value)</span>-->
+<!--        </div>-->
+<!---->
+<!--        <div class="description">-->
+<!--            Training for the Construction Supervisor License-->
+<!--        </div>-->
+<!---->
+<!--        <div class="purchase-button">-->
+<!--            <div class="title left">-->
+<!--                Start Now-->
+<!--            </div>-->
+<!---->
+<!--            <div class="price right">-->
+<!--                $99-->
+<!--            </div>-->
+<!---->
+<!--            <div class="clear"></div>-->
+<!--        </div>-->
+<!--    </a>-->
+<!--    <a class="column" href="https://rd130.infusionsoft.com/app/manageCart/addProduct?productId=5" target="_blank">-->
+<!--        <div class="title">-->
+<!--            10hr Course-->
+<!--        </div>-->
+<!---->
+<!--        <div class="description">-->
+<!--            Training for the Construction Supervisor, 1 and 2 family License-->
+<!--        </div>-->
+<!---->
+<!--        <div class="purchase-button">-->
+<!--            <div class="title left">-->
+<!--                Start Now-->
+<!--            </div>-->
+<!---->
+<!--            <div class="price right">-->
+<!--                $79-->
+<!--            </div>-->
+<!---->
+<!--            <div class="clear"></div>-->
+<!--        </div>-->
+<!--    </a>-->
+<!--    <div class="clear"></div>-->
 </div>
 
     <div id="container">

@@ -16,4 +16,5 @@ Template Name: Full Width Template
             </div>
         </div>
     </div>
+</div>
 <?php get_footer();?>

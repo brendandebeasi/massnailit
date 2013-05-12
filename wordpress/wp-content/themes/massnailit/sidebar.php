@@ -10,10 +10,10 @@
             <input class="email" name="email" placeholder="Email Address" type="text" />
 
 
-            <select name="course" class="product-type custom dropdown large">
-                <option value="online">Online CSL Course</option>
-<!--                <option value="offline">Real-World CSL Course</option>-->
-            </select>
+<!--            <select name="course" class="product-type custom dropdown large">-->
+<!--                <option value="online">Online CSL Course</option>-->
+<!--<!--                <option value="offline">Real-World CSL Course</option>-->-->
+<!--            </select>-->
 
 
 
@@ -21,6 +21,7 @@
                 <option value="3">12 Hour CSL Certification</option>
                 <option value="5">10 Hour CSL Certification</option>
                 <option value="9">6 Hour CSL Certification</option>
+                <option value="11">Wetlands Certifcation Course</option>
             </select>
 
 

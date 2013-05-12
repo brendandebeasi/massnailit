@@ -1,11 +1,23 @@
 <?php
-	
+
+
+function IS_getProductFromURL() {
+    $IS_cartBase = 'https://rd130.infusionsoft.com';
+    $IS_category = '/app/storeFront/showCategoryPage?categoryId=';
+    $IS_product =  '/app/storeFront/showProductDetail?productId=';
+
+    if(isset($_GET['pid'])) return $IS_cartBase . $IS_product . $_GET['pid']; //online courses
+    if(isset($_GET['cid'])) return $IS_cartBase . $IS_category . $_GET['cid']; //online courses
+    else return $IS_cartBase . $IS_category . '3';
+}
 add_action('admin_menu', 'mni_settings'); 
 add_action('admin_head', 'mni_styles');
 
 function mni_settings() { 
 	add_menu_page('MNI Settings', 'MNI Settings', 'edit_themes', __FILE__, 'mni_settings_submit');
 }
+
+
 
 function get_max_testimonials() {
 	$max_testimonials = 5;

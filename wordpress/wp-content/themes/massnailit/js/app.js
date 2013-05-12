@@ -4,7 +4,7 @@ $(document).ready(function() {
     $(document).foundation();
     var integration_server_address = 'http://i.dev.mni.neueway.com/' //TODO: Make this dynamic at some point
     var api_key = 'Callie123';
-    var add_to_cart_base = 'https://rd130.infusionsoft.com/app/manageCart/addProduct?productId=';
+    var add_to_cart_base = '/checkout/?pid=';
 
     function makeAPIRequest(method, data) {
         if(typeof(data) == 'undefined') var data = {};
