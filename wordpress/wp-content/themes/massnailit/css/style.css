@@ -155,9 +155,9 @@ header {
 }
 
 .sub-heading {
-	color: #111111;
+	color: #ececec;
 	font-family:"Myriad Pro"; /* Get font style */
-	text-shadow: 0px 1px 0px #fff;
+	/*text-shadow: 0px 1px 0px #fff;*/
 	font-size:1em;
 	font-weight:600;
     padding-left: 74px;
@@ -169,8 +169,9 @@ header {
 	font-family:"Myriad Pro";
 	font-style:italic;
 	font-size:1.2em;
-	text-shadow: 0px 1px 0px #fff;
-	color: #4b0404;
+	/*text-shadow: 0px 1px 0px #fff;*/
+	color: #ececec;
+	/*color: #4b0404;*/
 	font-weight:bold;
 	margin-top:33px;
 
