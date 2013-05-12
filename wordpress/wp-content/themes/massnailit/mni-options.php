@@ -6,11 +6,20 @@ function IS_getProductFromURL() {
     $IS_category = '/app/storeFront/showCategoryPage?categoryId=';
     $IS_product =  '/app/storeFront/showProductDetail?productId=';
 
-    if(isset($_GET['pid'])) return $IS_cartBase . $IS_product . $_GET['pid']; //online courses
-    if(isset($_GET['cid'])) return $IS_cartBase . $IS_category . $_GET['cid']; //online courses
-    else return $IS_cartBase . $IS_category . '3';
+    if(isset($_GET['pid'])) $return =  $IS_cartBase . $IS_product . $_GET['pid']; //online courses
+    if(isset($_GET['cid'])) $return = $IS_cartBase . $IS_category . $_GET['cid']; //online courses
+    else $return = $IS_cartBase . $IS_category . '3';
+
+    $mni_data = [];
+    if(isset($_GET['fname'])) $mni_data['fname'] = $_GET['fname'];
+    if(isset($_GET['lname'])) $mni_data['lname'] = $_GET['lname'];
+    if(isset($_GET['email'])) $mni_data['email'] = $_GET['email'];
+    $mni_data['host'] = $_SERVER['SERVER_NAME'];
+    $return .= '&mni=' . base64_encode(json_encode($mni_data));
+
+    return $return;
 }
-add_action('admin_menu', 'mni_settings'); 
+add_action('admin_menu', 'mni_settings');
 add_action('admin_head', 'mni_styles');
 
 function mni_settings() { 
