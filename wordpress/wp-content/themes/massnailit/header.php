@@ -95,7 +95,7 @@
                     <div class="headline-heading"><?php display_tagline();?></div>
                 </div>
                 <div class="large-3 columns">
-                    <a href="/contact"></a><img src="<?php bloginfo('stylesheet_directory'); ?>/css/img/we-local.png" height="70%" width="70%"/>
+                    <a href="/contact"><img src="<?php bloginfo('stylesheet_directory'); ?>/css/img/we-local.png" height="70%" width="70%"/></a>
                 </div>
             </div>
                 <nav class="nav-background">
