@@ -8,6 +8,12 @@ Template Name: Home Template
     <div class="row">
         <div class="large-8 column">
             <ul data-orbit>
+                <li>
+                   <a href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/slides/bbrs-regulations-tunnel.jpg" alt=""/></a>
+                </li>
+                <li>
+                    <a href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/slides/license-expire-hothothot.jpg" alt=""/></a>
+                </li>
                 <?php while (have_posts()) : the_post(); $featured = rwmb_meta( 'rw_featured_image_checkbox'); if ($featured == "1") { ?>
                     <li>
                         <?php if (has_post_thumbnail()) { the_post_thumbnail(('post-thumbnail' ), array('class' => 'fp-image')); } ?>
