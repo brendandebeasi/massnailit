@@ -12,7 +12,7 @@
 
 <!--            <select name="course" class="product-type custom dropdown large">-->
 <!--                <option value="online">Online CSL Course</option>-->
-<!--<!--                <option value="offline">Real-World CSL Course</option>-->-->
+<!--                <option value="offline">Real-World CSL Course</option>-->
 <!--            </select>-->
 
 
