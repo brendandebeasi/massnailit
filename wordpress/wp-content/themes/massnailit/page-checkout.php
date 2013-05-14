@@ -12,7 +12,7 @@ Template Name: Checkout Templates
                 <!--                5 - books
                 <!--                3 - online -->
 
-                <iframe src="<?php echo IS_getProductFromURL(); ?>" height="1300px" width="100%" style="overflow: hidden;border: 0;" border="0" scrolling="no"></iframe>
+                <iframe src="<?php echo IS_getProductFromURL(); ?>" height="1550px" width="100%" style="overflow: hidden;border: 0;" border="0" scrolling="no"></iframe>
 
             </div>
         </div>
