@@ -13,3 +13,8 @@ wordpress/wp-content/cache/config
 wordpress/wp-content/cache/config/*
 wordpress/wp-content/cache/tmp
 wordpress/wp-content/cache/tmp/*
+wordpress/mnissl.tar.gz
+wordpress/wp-content/advanced-cache.php
+wordpress/wp-content/db.php
+wordpress/wp-content/object-cache.php
+wordpress/wp-content/uploads/*
