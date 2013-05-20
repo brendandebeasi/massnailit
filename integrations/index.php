@@ -18,6 +18,7 @@ if(isset($_GET['action'])) $action = $_GET['action'];
 elseif(isset($_POST['action'])) $action = $_POST['action'];
 switch($action) {
     case 'is-successful-purchase':
+
         $pi = $_POST; //purchaseinfo
         $IS_user_id = $pi["Id"];
         $IS_user_lms_id = $pi['lmsuid'];
@@ -31,7 +32,7 @@ switch($action) {
             //see if there are any skus beginning with ON.
             if($returnValue) {
                 //see if there is an LMS ID for the user
-                if($IS_user_lms_id == '0.0') { //if not create one
+                if($IS_user_lms_id=='') { //if not create one
                     $response = LMS_createUser($pi['FirstName'],$pi['LastName'],$pi['Email'],strtolower($pi['FirstName'].$pi['LastName'].$pi['Id']),generateStrongPassword());
                     $IS_user_lms_id = $response['data']['id'];
                     //save the litmos ID to the IS user's lms field.
