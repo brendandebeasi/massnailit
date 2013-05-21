@@ -5,6 +5,8 @@
 .DS_Store
 <<<<<<< HEAD
 is-test/.DS_Store
+=======
+is-test/.DS_Store
 wp-content/uploads
 wordpress/wp-content/cache
 wordpress/wp-content/cache/*
@@ -19,6 +21,4 @@ wordpress/wp-content/advanced-cache.php
 wordpress/wp-content/db.php
 wordpress/wp-content/object-cache.php
 wordpress/wp-content/uploads/*
-=======
-is-test/.DS_Store
->>>>>>> Removed typos from SSH
+>>>>>>> 111110799cf9f61da7288589aae8667b73e79986

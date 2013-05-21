@@ -4,3 +4,17 @@
 .idea/*
 .DS_Store
 is-test/.DS_Store
+wp-content/uploads
+wordpress/wp-content/cache
+wordpress/wp-content/cache/*
+wordpress/wp-content/w3tc-config
+wordpress/wp-content/w3tc-config/*
+wordpress/wp-content/cache/config
+wordpress/wp-content/cache/config/*
+wordpress/wp-content/cache/tmp
+wordpress/wp-content/cache/tmp/*
+wordpress/mnissl.tar.gz
+wordpress/wp-content/advanced-cache.php
+wordpress/wp-content/db.php
+wordpress/wp-content/object-cache.php
+wordpress/wp-content/uploads/*
