@@ -623,7 +623,7 @@ nav .bottom li a:hover {
         float: none;
     }
 }
-@media only screen and (max-width: 759px) {
+@media all and (max-width: 759px) {
     .price-table .column {
         width: 100%;
     }
