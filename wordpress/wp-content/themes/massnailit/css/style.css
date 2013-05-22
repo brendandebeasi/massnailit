@@ -573,6 +573,13 @@ nav .bottom li a:hover {
 
 	.headline-heading {
 		margin-left:65px;
+		margin-top:15px;
+	}
+
+	.fp-bottom-section h4 {
+		margin-top:20px;
+		border-bottom:1px solid #ddd;
+		padding-bottom:5px;
 	}
 }
 
