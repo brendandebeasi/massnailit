@@ -572,13 +572,13 @@ nav .bottom li a:hover {
 	}
 }
 
-@media only screen and (max-width: 840px) {
+@media all and (max-width: 840px) and (min-width:767px) {
 
 	.custom-csl fieldset {
 		padding:1em .5em;
 	}
 }
-@media only screen and (max-width: 467px) {
+@media all and (max-width: 467px) {
 	.icon-boston {
 		display:none;
 	}
@@ -589,7 +589,7 @@ nav .bottom li a:hover {
         text-align: center;
     }
 }
-@media only screen and (max-width: 549px) {
+@media all and (max-width: 549px) {
     nav .top-bar-section .left {
         float: none;
     }
@@ -617,7 +617,7 @@ nav .bottom li a:hover {
 		bottom: 0;
 	}
 }
-@media only screen and (max-width: 559px) {
+@media all and (max-width: 559px) {
     .top-bar-section ul li {
         display: block;
         float: none;
@@ -635,7 +635,7 @@ nav .bottom li a:hover {
         margin-left: 0;
     }
 }
-@media only screen and (max-width: 1023px) {
+@media all and (max-width: 1023px) {
     .top-bar-section .left {
         left: 0;
         right: 0;
