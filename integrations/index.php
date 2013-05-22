@@ -22,6 +22,7 @@ switch($action) {
         $pi = $_POST; //purchaseinfo
         $IS_user_id = $pi["Id"];
         $IS_user_lms_id = $pi['lmsuid'];
+
         //get list of products user has purchased
         $purchased_skus = IS_getPurchasesForContact($IS_user_id);
         error_log(json_encode($purchased_skus));
@@ -33,7 +34,7 @@ switch($action) {
             if($returnValue) {
                 //see if there is an LMS ID for the user
                 if($IS_user_lms_id=='') { //if not create one
-                    $response = LMS_createUser($pi['FirstName'],$pi['LastName'],$pi['Email'],strtolower($pi['FirstName'].$pi['LastName'].$pi['Id']),generateStrongPassword());
+                    $response = LMS_createUser($pi['FirstName'],$pi['LastName'],$pi['Email'],strtolower($pi['FirstName'].$pi['LastName'].$pi['Id']),generateStrongPassword(),$pi['License']);
                     $IS_user_lms_id = $response['data']['id'];
                     //save the litmos ID to the IS user's lms field.
                     IS_associateWithLitmosUser($IS_user_id,$IS_user_lms_id);
@@ -234,7 +235,7 @@ function IS_getUserByEmail($email) {
     return $response;
 }
 
-function LMS_createUser($first_name,$last_name,$email_address,$username=null,$password) {
+function LMS_createUser($first_name,$last_name,$email_address,$username=null,$password,$license_number) {
     $response = ['success'=>0,'message'=>"An unknown error occured."];
 
     require_once('src/pest/PestJSON.php');
@@ -255,7 +256,8 @@ function LMS_createUser($first_name,$last_name,$email_address,$username=null,$pa
         'DisableMessages'=>false,
         'IsCustomUsername'=>$is_custom_user,
         'Password'=> $password,
-        'Active'=>true
+        'Active'=>true,
+        'CustomField1'=>$license_number,
     ];
     try {
         $user = $pest->post('/users?apikey=E8C3D63F-A273-461A-9691-37FC53EED941&source=mni',$data);
