@@ -9,12 +9,16 @@
                        </div>
 
                         <div class="large-4 push-2 columns">
-                            <p>&copy; 2013 Mass Nail It</p>
-                            <p>BBRS Coordinator ID: CD-0023</p>
+                            <div class="copy_text">
+                                <p>&copy; 2013 Mass Nail It</p>
+                                <p>BBRS Coordinator ID: CD-0023</p>
+                            </div>
                         </div>
-                        <div class="large-4 columns right">
-                            <a href="#"><i class="truste"></i></a>
-                            <a href="#"><i class="verisign"></i></a>
+                        <div class="large-4 columns">
+                            <div class="right-icons right">
+                                <a href="#"><i class="truste"></i></a>
+                                <a href="#"><i class="verisign"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>

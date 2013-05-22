@@ -520,8 +520,6 @@ footer p {
 	width:132px;
 	height:36px;
 	display:inline-block;
-	margin-right:10px;
-	margin-top: -5px;
 
 }
 
@@ -530,7 +528,7 @@ footer p {
 	width:83px;
 	height:41px;
 	display:inline-block;
-	margin-top: -5px;
+	margin-top: 0;
 
 }
 
@@ -553,6 +551,25 @@ nav .bottom li a {
 }
 nav .bottom li a:hover {
     color: #780800;
+}
+
+/* Mobile media queries */
+@media only screen and (max-width: 767px) {
+	.icon-local > a > img {
+		display:none;
+	}
+
+	.right-icons {
+		float:none;
+		display:block;
+		margin:0 auto;
+		text-align:center;
+	}
+
+	.copy_text {
+		margin-top:10px;
+		margin-bottom:10px;
+	}
 }
 
 @media only screen and (max-width: 467px) {

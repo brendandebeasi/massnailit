@@ -87,8 +87,8 @@
                 <div class="large-5 columns">
                     <a class="brand" href="<?php bloginfo('wpurl'); ?>">
                         <a href="/">
-                            <i class="icon-logo"></i>
-                            <i class="icon-brand"><img src="<?php bloginfo('stylesheet_directory'); ?>/css/img/mass-nail-it.png" alt=""/></i>
+                            <div class="icon-logo"></div>
+                            <div class="icon-brand"><img src="<?php bloginfo('stylesheet_directory'); ?>/css/img/mass-nail-it.png" alt="Mass Nail It"/></div>
                         </a>
                     </a>
                     <div class="sub-heading"><?php display_subhead_text(); ?></div>
@@ -97,7 +97,7 @@
                     <div class="headline-heading"><?php display_tagline();?></div>
                 </div>
                 <div class="large-3 columns">
-                    <a href="/contact"><img src="<?php bloginfo('stylesheet_directory'); ?>/css/img/we-local.png" height="60%" width="60%"/></a>
+                    <div class="icon-local"><a href="/contact"><img src="<?php bloginfo('stylesheet_directory'); ?>/css/img/we-local.png" height="60%" width="60%" alt="We're local!"/></a></div>
                 </div>
             </div>
                 <nav class="nav-background">
