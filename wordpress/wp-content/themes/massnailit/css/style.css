@@ -572,6 +572,12 @@ nav .bottom li a:hover {
 	}
 }
 
+@media only screen and (max-width: 840px) {
+
+	.custom-csl fieldset {
+		padding:1em .5em;
+	}
+}
 @media only screen and (max-width: 467px) {
 	.icon-boston {
 		display:none;
