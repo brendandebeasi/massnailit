@@ -156,7 +156,7 @@ header {
 
 .sub-heading {
 	color: #ececec;
-	font-family:"Myriad Pro"; /* Get font style */
+	font-family:MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', Helvetica, sans-serif; /* Get font style */
 	/*text-shadow: 0px 1px 0px #fff;*/
 	font-size:1em;
 	font-weight:600;
@@ -168,7 +168,7 @@ header {
 }
 
 .headline-heading {
-	font-family:"Myriad Pro";
+	font-family:MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', Helvetica, sans-serif;
 	font-style:italic;
 	font-size:1.2em;
 	/*text-shadow: 0px 1px 0px #fff;*/
@@ -554,7 +554,7 @@ nav .bottom li a:hover {
 }
 
 /* Mobile media queries */
-@media only screen and (max-width: 767px) {
+@media all and (max-width: 767px) {
 	.icon-local > a > img {
 		display:none;
 	}
@@ -569,6 +569,12 @@ nav .bottom li a:hover {
 	.copy_text {
 		margin-top:10px;
 		margin-bottom:10px;
+	}
+}
+
+@media all and (orientation:portrait) and (max-width:767px) {
+	.custom-csl {
+		margin-top:20px;
 	}
 }
 
