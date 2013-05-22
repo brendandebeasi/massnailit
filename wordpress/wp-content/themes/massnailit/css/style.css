@@ -156,7 +156,7 @@ header {
 
 .sub-heading {
 	color: #ececec;
-	font-family:"Myriad Pro"; /* Get font style */
+	font-family:MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', Helvetica, sans-serif; /* Get font style */
 	/*text-shadow: 0px 1px 0px #fff;*/
 	font-size:1em;
 	font-weight:600;
@@ -168,7 +168,7 @@ header {
 }
 
 .headline-heading {
-	font-family:"Myriad Pro";
+	font-family:MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', Helvetica, sans-serif;
 	font-style:italic;
 	font-size:1.2em;
 	/*text-shadow: 0px 1px 0px #fff;*/
@@ -520,8 +520,6 @@ footer p {
 	width:132px;
 	height:36px;
 	display:inline-block;
-	margin-right:10px;
-	margin-top: -5px;
 
 }
 
@@ -530,7 +528,7 @@ footer p {
 	width:83px;
 	height:41px;
 	display:inline-block;
-	margin-top: -5px;
+	margin-top: 0;
 
 }
 
@@ -555,7 +553,49 @@ nav .bottom li a:hover {
     color: #780800;
 }
 
-@media only screen and (max-width: 467px) {
+/* Mobile media queries */
+@media all and (max-width: 767px) {
+	.icon-local > a > img {
+		display:none;
+	}
+
+	.right-icons {
+		float:none;
+		display:block;
+		margin:0 auto;
+		text-align:center;
+	}
+
+	.copy_text {
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+
+	.headline-heading {
+		margin-left:65px;
+		margin-top:15px;
+	}
+
+	.fp-bottom-section h4 {
+		margin-top:20px;
+		border-bottom:1px solid #ddd;
+		padding-bottom:5px;
+	}
+}
+
+@media all and (orientation:portrait) and (max-width:767px) {
+	.custom-csl {
+		margin-top:20px;
+	}
+}
+
+@media all and (max-width: 840px) and (min-width:767px) {
+
+	.custom-csl fieldset {
+		padding:1em .5em;
+	}
+}
+@media all and (max-width: 467px) {
 	.icon-boston {
 		display:none;
 	}
@@ -566,7 +606,7 @@ nav .bottom li a:hover {
         text-align: center;
     }
 }
-@media only screen and (max-width: 549px) {
+@media all and (max-width: 549px) {
     nav .top-bar-section .left {
         float: none;
     }
@@ -594,13 +634,13 @@ nav .bottom li a:hover {
 		bottom: 0;
 	}
 }
-@media only screen and (max-width: 559px) {
+@media all and (max-width: 559px) {
     .top-bar-section ul li {
         display: block;
         float: none;
     }
 }
-@media only screen and (max-width: 759px) {
+@media all and (max-width: 759px) {
     .price-table .column {
         width: 100%;
     }
@@ -612,7 +652,7 @@ nav .bottom li a:hover {
         margin-left: 0;
     }
 }
-@media only screen and (max-width: 1023px) {
+@media all and (max-width: 1023px) {
     .top-bar-section .left {
         left: 0;
         right: 0;
