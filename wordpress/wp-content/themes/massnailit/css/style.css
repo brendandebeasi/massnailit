@@ -570,6 +570,10 @@ nav .bottom li a:hover {
 		margin-top:10px;
 		margin-bottom:10px;
 	}
+
+	.headline-heading {
+		margin-left:65px;
+	}
 }
 
 @media all and (orientation:portrait) and (max-width:767px) {
