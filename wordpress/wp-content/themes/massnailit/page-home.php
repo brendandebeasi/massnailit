@@ -23,12 +23,6 @@ Template Name: Home Template
         <?php get_sidebar(); ?>
     <div class="row fp-top-section">
         <?php display_home_promos(); ?>
-
-        <div class="large-3 column">
-            <h5>Upcoming Classes</h5>
-            <ul class="mni-upcoming-classes">
-            </ul>
-        </div>
     </div>
     <div class="row fp-bottom-section">
         <div class="large-8 column">

@@ -61,7 +61,7 @@ function display_home_promos()
 	$output_home_promos = "";
 	for($i = 1; $i <= get_max_promos(); $i++)
 	{
-			$output_home_promos .= "<div class=\"large-3 column\">";
+			$output_home_promos .= "<div class=\"large-4 column\">";
 			$output_home_promos .= "<h5>". esc_html(get_option("home_promo_title_".$i)) ."</h5>";
 			$output_home_promos .= "<p>". esc_html(get_option("home_promo_description_".$i))."</p>";
 			$output_home_promos .= "<a href='". esc_url(get_option("home_promo_url_".$i))."' class=\"button red\">Read More</a>";
