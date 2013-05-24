@@ -34,7 +34,7 @@ switch($action) {
             if($returnValue) {
                 //see if there is an LMS ID for the user
                 if($IS_user_lms_id=='') { //if not create one
-                    $response = LMS_createUser($pi['FirstName'],$pi['LastName'],$pi['Email'],strtolower($pi['FirstName'].$pi['LastName'].$pi['Id']),generateStrongPassword(),$pi['License']);
+                    $response = LMS_createUser($pi['FirstName'],$pi['LastName'],$pi['Email'],strtolower($pi['FirstName'].$pi['LastName'].$pi['Id']),generateStrongPassword(),$pi['licensetype'] . '-' . $pi['License']);
                     $IS_user_lms_id = $response['data']['id'];
                     //save the litmos ID to the IS user's lms field.
                     IS_associateWithLitmosUser($IS_user_id,$IS_user_lms_id);
