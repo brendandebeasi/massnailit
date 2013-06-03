@@ -12,9 +12,7 @@ Template Name: Checkout Templates
                 <!--                5 - books
                 <!--                3 - online -->
 
-                <iframe src="<?php echo IS_getProductFromURL(); ?>" height="1550px" width="100%" style="overflow: hidden;border: 0;" border="0" scrolling="no"></iframe>
-
-            </div>
+    <iframe src="<?php echo IS_getProductFromURL(); ?>" allowtransparency=true frameborder=0 id=rf sandbox="allow-same-origin allow-forms allow-scripts" scrolling=auto src="https://www.massnailit.com/" style="width:100%;height:700px;overflow-x:hidden;"></iframe>            </div>
         </div>
     </div>
 <?php get_footer();?>
