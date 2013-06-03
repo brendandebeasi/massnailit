@@ -255,10 +255,11 @@ function LMS_createUser($first_name,$last_name,$email_address,$username=null,$pa
         'SkipFirstLogin'=>true,
         'DisableMessages'=>false,
         'IsCustomUsername'=>$is_custom_user,
-        'Password'=> $password,
+
         'Active'=>true,
         'CustomField1'=>$license_number,
     ];
+    //Password is disabled: 'Password'=> $password,
     try {
         $user = $pest->post('/users?apikey=E8C3D63F-A273-461A-9691-37FC53EED941&source=mni',$data);
         $response = ['success'=>1,'message'=>null,'data'=>['response'=>$user,'id'=>$user['Id']]];
