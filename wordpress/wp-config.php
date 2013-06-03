@@ -1,5 +1,5 @@
 <?php
-
+define('WP_CACHE', true);
 // NOTE: lives outside webroot for additional security
 // set the config file based on current environment
 if (strpos($_SERVER['HTTP_HOST'], 'dev.massnailit.com') !== false && $_SERVER['SERVER_PORT'] == 1337) {
