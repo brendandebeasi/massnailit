@@ -255,8 +255,7 @@ function LMS_createUser($first_name,$last_name,$email_address,$username=null,$pa
         'SkipFirstLogin'=>true,
         'DisableMessages'=>false,
         'IsCustomUsername'=>$is_custom_user,
-
-        'Active'=>true,
+        'Active'=>false,
         'CustomField1'=>$license_number,
     ];
     //Password is disabled: 'Password'=> $password,
