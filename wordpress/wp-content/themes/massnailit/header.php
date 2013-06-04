@@ -9,8 +9,6 @@
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/vendor/custom.modernizr.js"></script>
     <?php wp_head(); ?> 
 </head>
-
-
 <body>
 <div class="price-table-original online hidden">
 <!--    <a class="column" href="https://rd130.infusionsoft.com/app/manageCart/addProduct?productId=9" target="_blank">-->
