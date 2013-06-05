@@ -18,11 +18,11 @@
 
 
             <select name="course" class="product-id custom dropdown large">
-                <option value="pid=3">12 Hour CSL Certification</option>
-                <option value="pid=5">10 Hour CSL Certification</option>
-                <option value="pid=9">6 Hour CSL Certification</option>
-                <option value="pid=11">Wetlands Certifcation Course</option>
-                <option value="cid=1">Live (Real Life) CSL Certification</option>
+                <option value="pid=3">12Hr Online CSL Course ($99)</option>
+                <option value="pid=5">10Hr Online CSL Course ($79)</option>
+                <option value="pid=9">6Hr CSL Online Course ($69)</option>
+                <option value="pid=11">Wetlands Certification Course ($29)</option>
+                <option value="cid=1">Real Life CSL Certification ($225)</option>
             </select>
 
 
