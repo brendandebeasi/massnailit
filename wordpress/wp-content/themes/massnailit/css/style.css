@@ -552,7 +552,7 @@ nav .bottom li a {
 nav .bottom li a:hover {
     color: #780800;
 }
-.short-form .custom.dropdown {
+form.custom .custom.dropdown {
     font-size: 9.5pt;
 }
 /* Mobile media queries */
