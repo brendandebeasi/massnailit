@@ -22,7 +22,7 @@
                 <option value="pid=5">10Hr Online CSL Course ($79)</option>
                 <option value="pid=9">6Hr CSL Online Course ($69)</option>
                 <option value="pid=11">Wetlands Certification Course ($29)</option>
-                <option value="cid=1">Real Life CSL Certification ($225)</option>
+                <option value="cid=1">12Hr Real, Live Classroom CSL Certification at Various MA Locations ($225)</option>
             </select>
 
 
