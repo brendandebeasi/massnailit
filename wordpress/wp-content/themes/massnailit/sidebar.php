@@ -18,11 +18,11 @@
 
 
             <select name="course" class="product-id custom dropdown large">
-                <option value="3">12 Hour CSL Certification</option>
-                <option value="5">10 Hour CSL Certification</option>
-                <option value="9">6 Hour CSL Certification</option>
-                <option value="11">Wetlands Certifcation Course</option>
-                <option value="0">Live (Real Life) CSL Certification</option>
+                <option value="pid=3">12 Hour CSL Certification</option>
+                <option value="pid=5">10 Hour CSL Certification</option>
+                <option value="pid=9">6 Hour CSL Certification</option>
+                <option value="pid=11">Wetlands Certifcation Course</option>
+                <option value="cid=1">Live (Real Life) CSL Certification</option>
             </select>
 
 
