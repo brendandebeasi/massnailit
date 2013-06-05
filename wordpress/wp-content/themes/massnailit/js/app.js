@@ -5,6 +5,7 @@ $(document).ready(function() {
     var integration_server_address = 'http://i.dev.mni.neueway.com/' //TODO: Make this dynamic at some point
     var api_key = 'Callie123';
     var add_to_cart_base = '/checkout/?pid=';
+    var add_to_cart_category_base = '/checkout/?cid=';
 
     function makeAPIRequest(method, data) {
         if(typeof(data) == 'undefined') var data = {};
@@ -23,12 +24,17 @@ $(document).ready(function() {
 
     }
     function updateShortFormButton(form) {
-        var fName,lName,email,courseId;
-        fName = form.find('.fName').val();
-        lName = form.find('.lName').val();
-        email = form.find('.email').val();
+        var fName,lName,email,courseId,finalURL;
         courseId = form.find('.product-id').val();
-        form.find('.button').attr('href',add_to_cart_base + courseId + '&fName=' + fName + '&lName=' + lName + '&email=' + email);
+        if(courseId !== 0) {
+            fName = form.find('.fName').val();
+            lName = form.find('.lName').val();
+            email = form.find('.email').val();
+            finalURL = add_to_cart_base + courseId + '&fName=' + fName + '&lName=' + lName + '&email=' + email;
+        }
+        else finalURL = add_to_cart_category_base + 1;
+
+        form.find('.button').attr('href',finalURL);
     }
 
     $('.short-form input').keyup(function() {

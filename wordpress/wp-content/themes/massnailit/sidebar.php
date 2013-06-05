@@ -22,6 +22,7 @@
                 <option value="5">10 Hour CSL Certification</option>
                 <option value="9">6 Hour CSL Certification</option>
                 <option value="11">Wetlands Certifcation Course</option>
+                <option value="0">Live (Real Life) CSL Certification</option>
             </select>
 
 
