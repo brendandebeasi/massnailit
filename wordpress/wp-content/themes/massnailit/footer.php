@@ -25,6 +25,7 @@
             </footer>
             </div>
         </div>
+    <script src="<?php bloginfo('stylesheet_directory'); ?>/js/vendor/css3-mediaqueries.js"></script>
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/vendor/jquery.js"></script>
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/foundation.min.js"></script>
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/app.js"></script>
