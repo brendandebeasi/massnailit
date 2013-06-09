@@ -2,6 +2,7 @@
 <head>
     <meta charset='utf-8' />
     <meta name="viewport" content="width=device-width" />
+    <meta name="google-site-verification" content="S3beRQ1HlywTzsjnfnCbTjUMCc_2xvCQXvZUO_P2710" />
     <title><?php wp_title()?></title>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/normalize.css" />
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/foundation.css" />
