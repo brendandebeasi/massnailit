@@ -18,3 +18,5 @@ wordpress/wp-content/advanced-cache.php
 wordpress/wp-content/db.php
 wordpress/wp-content/object-cache.php
 wordpress/wp-content/uploads/*
+wordpress/sitemap.xml
+wordpress/sitemap.xml.gz
