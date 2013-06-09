@@ -1,7 +1,12 @@
 //MNI Application
 //I handle all the API functions that are used on the MNI site. I return product listings, course dates, etc
 $(document).ready(function() {
-    var jPM = $.jPanelMenu();
+    $(document).foundation('orbit', {
+        timer_speed: 0
+    });
+    $(document).foundation();
+
+    //var jPM = $.jPanelMenu();
 
 
     $(document).foundation();
