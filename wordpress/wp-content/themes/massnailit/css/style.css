@@ -558,10 +558,13 @@ form.custom .custom.dropdown {
     font-size: 9.5pt;
 }
 /* Mobile media queries */
-@media only screen and (min-device-width: 480px) and (max-device-width: 767px) {
-	.icon-local > a > img {
+@media all and (max-width: 767px) {
+	.icon-local {
 		display:none;
 	}
+    .icon-logo {
+        display: none;
+    }
     .mobileMenuToggle  {
         display: block;
     }
@@ -633,13 +636,19 @@ form.custom .custom.dropdown {
         display: block;
         float: none;
     }
-    .orbit-container {
+    .orbit-container.orbit-stack-on-small {
         display: none;
     }
 }
 
 /* iPad */
-@media only screen and (min-device-width: 768px)  and (max-device-width: 1024px) {
+@media all and (max-width: 1023px) {
+    .icon-local {
+        display:none;
+    }
+    .icon-logo {
+        display: none;
+    }
     .top-bar-section .left {
         left: 0;
         right: 0;
@@ -691,4 +700,83 @@ form.custom .custom.dropdown {
 }
 .real-customers h4{
     margin-top: 40px;
+}
+
+/*SideSwipe*/
+.SideSwipe {
+    min-height: inherit;
+    background-color: #32394A;
+}
+
+.SideSwipe.SideSwipe-moving {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-user-select: none;
+}
+
+.SideSwipe .SideSwipe-panel {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    height: 100%;
+    background-color: inherit;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+.overthrow-enabled .overthrow {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.SideSwipe .SideSwipe-panel.SideSwipe-left {
+    left: 0;
+}
+
+.SideSwipe .SideSwipe-panel.SideSwipe-right {
+    right: 0;
+}
+
+/* When the left panel is open, shift the right panel off the screen
+ * to avoid catching events. Shouldn't be necessary, but seems to be
+ * a bug in iOS.
+ *
+ * Also, an earlier solution to this (shifting the right panel except
+ * when it's open) causes a display glitch on Android during the close
+ * transition. The new approach appears to work well for both.
+ */
+.SideSwipe .SideSwipe-panel.SideSwipe-left.SideSwipe-open ~ .SideSwipe-panel.SideSwipe-right {
+    -webkit-transform: translate3d(100%, 0, 0);
+}
+
+.SideSwipe .SideSwipe-panel.SideSwipe-open {
+    z-index: 1;
+}
+
+.SideSwipe .SideSwipe-panel.SideSwipe-left,
+.SideSwipe .SideSwipe-panel.SideSwipe-right {
+    color: white;
+    text-shadow: 0 1px 0 #32394A;
+    width: 82%;
+}
+
+.SideSwipe .SideSwipe-panel.SideSwipe-main {
+    z-index: 2;
+    background-color: white;
+    left: 0;
+    width: 100%;
+    -webkit-transition-property: -webkit-transform;
+}
+
+/* Workaround for an Android bug. Without this, the main panel's
+ * children blocks don't use the full width available.
+ */
+.SideSwipe .SideSwipe-panel.SideSwipe-main > * {
+    background-color: inherit;
+    overflow: auto;
+}
+
+.SideSwipe.SideSwipe-transition .SideSwipe-panel.SideSwipe-main {
+    -webkit-transition-duration: 200ms;
+    -webkit-transition-timing-function: linear;
 }
