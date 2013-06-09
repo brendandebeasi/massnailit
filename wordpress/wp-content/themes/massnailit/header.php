@@ -6,6 +6,7 @@
     <title><?php wp_title()?></title>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/normalize.css" />
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/foundation.css" />
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/SideSwipe.css" />
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/style.css" />
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/vendor/custom.modernizr.js"></script>
     <?php wp_head(); ?>
