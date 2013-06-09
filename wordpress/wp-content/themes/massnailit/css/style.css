@@ -584,21 +584,13 @@ form.custom .custom.dropdown {
 		border-bottom:1px solid #ddd;
 		padding-bottom:5px;
 	}
-}
-
-@media all and (orientation:portrait) and (max-width:767px) {
 	.custom-csl {
 		margin-top:20px;
 	}
-}
-
-@media all and (max-width: 840px) and (min-width:767px) {
-
 	.custom-csl fieldset {
 		padding:1em .5em;
 	}
-}
-@media all and (max-width: 467px) {
+
 	.icon-boston {
 		display:none;
 	}
@@ -608,8 +600,6 @@ form.custom .custom.dropdown {
     .sub-heading {
         text-align: center;
     }
-}
-@media all and (max-width: 549px) {
     nav .top-bar-section .left {
         float: none;
     }
@@ -628,33 +618,21 @@ form.custom .custom.dropdown {
     }
 
     .headline-heading div{
-		display:none;
-	}
-	.icon-boston {
-		position: absolute;
-		right: 0;
-		top: -75px;
-		bottom: 0;
-	}
-}
-@media all and (max-width: 559px) {
+        display:none;
+    }
+    .icon-boston {
+        position: absolute;
+        right: 0;
+        top: -75px;
+        bottom: 0;
+    }
     .top-bar-section ul li {
         display: block;
         float: none;
     }
 }
-@media all and (max-width: 759px) {
-    .price-table .column {
-        width: 100%;
-    }
-    .price-table .column {
-        margin: 0;
-        margin-bottom: 5px;
-    }
-    .price-table .column:first-child {
-        margin-left: 0;
-    }
-}
+
+/* iPad */
 @media all and (max-width: 1023px) {
     .top-bar-section .left {
         left: 0;
@@ -664,6 +642,16 @@ form.custom .custom.dropdown {
     }
     .top-bar-section li {
         float: left;
+    }
+    .price-table .column {
+        width: 100%;
+    }
+    .price-table .column {
+        margin: 0;
+        margin-bottom: 5px;
+    }
+    .price-table .column:first-child {
+        margin-left: 0;
     }
 }
 
