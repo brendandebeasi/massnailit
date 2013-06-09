@@ -88,7 +88,7 @@
         <header>
             <div class="row">
                 <div class="large-5 columns">
-                    <div class="mobileMenuToggle menu-trigger">MENU</div>
+<!--                    <div class="mobileMenuToggle menu-trigger">MENU</div>-->
                     <a class="brand" href="<?php bloginfo('wpurl'); ?>">
                         <div class="icon-logo"></div>
                         <div class="icon-brand"><img src="<?php bloginfo('stylesheet_directory'); ?>/css/img/mass-nail-it.png" alt="Mass Nail It"/></div>
@@ -109,5 +109,4 @@
                 </nav>
 
         </header>
-    <div id="menu" class="mobileMenu"><?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' =>'mobile' ) ); ?></div>
 
