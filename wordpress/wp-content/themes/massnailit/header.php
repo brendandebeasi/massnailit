@@ -86,15 +86,14 @@
 </div>
 
     <div id="container" class="SideSwipe"><div class="SideSwipe-panel SideSwipe-main">
+    <div class="SideSwipe-panel SideSwipe-left"><?php wp_nav_menu( array( 'theme_location' => 'mobile-menu', 'menu_class' =>'mobile' ) ); ?></div>
         <header>
             <div class="row">
                 <div class="large-5 columns">
                     <div class="mobileMenuToggle toggle left">MENU</div>
                     <a class="brand" href="<?php bloginfo('wpurl'); ?>">
-                        <a href="<?php bloginfo('wpurl'); ?>">
-                            <div class="icon-logo"></div>
-                            <div class="icon-brand"><img src="<?php bloginfo('stylesheet_directory'); ?>/css/img/mass-nail-it.png" alt="Mass Nail It"/></div>
-                        </a>
+                        <div class="icon-logo"></div>
+                        <div class="icon-brand"><img src="<?php bloginfo('stylesheet_directory'); ?>/css/img/mass-nail-it.png" alt="Mass Nail It"/></div>
                     </a>
                     <div class="sub-heading"><?php display_subhead_text(); ?></div>
                 </div>
@@ -112,4 +111,4 @@
                 </nav>
 
         </header>
-        <div class="hidden SideSwipe-panel SideSwipe-left"><?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' =>'left' ) ); ?></div>
+

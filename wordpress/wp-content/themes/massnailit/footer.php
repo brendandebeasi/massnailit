@@ -24,7 +24,6 @@
                 </div>
             </footer>
             </div>
-            </div>
         </div>
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/vendor/retina.js"></script>
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/vendor/custom.modernizr.js"></script>
