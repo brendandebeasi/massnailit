@@ -26,11 +26,6 @@
             </div>
             </div>
         </div>
-    <!--[if lt IE 9]>
-    <script src="<?php bloginfo('stylesheet_directory'); ?>/js/vendor/respond.min.js"></script>
-    <script src="<?php bloginfo('stylesheet_directory'); ?>/js/vendor/stan/floatacious.min.js"></script>
-<!--    <script src="--><?php //bloginfo('stylesheet_directory'); ?><!--/js/vendor/stan/stan.min.js"></script>-->
-    <![endif]-->
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/vendor/retina.js"></script>
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/vendor/custom.modernizr.js"></script>
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/vendor/jquery.js"></script>

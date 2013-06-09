@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/SideSwipe.css" />
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/style.css" />
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/vendor/custom.modernizr.js"></script>
+    <!--[if lt IE 9]>
+        <script src="<?php bloginfo('stylesheet_directory'); ?>/js/vendor/respond.min.js"></script>
+        <script src="<?php bloginfo('stylesheet_directory'); ?>/js/vendor/stan/floatacious.min.js"></script>
+    <![endif]-->
     <?php wp_head(); ?>
 </head>
 <body>
