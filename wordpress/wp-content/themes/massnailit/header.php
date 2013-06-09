@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/foundation.css" />
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/style.css" />
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/vendor/custom.modernizr.js"></script>
-    <?php wp_head(); ?> 
+    <?php wp_head(); ?>
 </head>
 <body>
 <div class="price-table-original online hidden">
@@ -96,7 +96,7 @@
                     <div class="headline-heading"><?php display_tagline();?></div>
                 </div>
                 <div class="large-3 columns">
-                    <div class="icon-local"><a href="/contact"><img src="<?php bloginfo('stylesheet_directory'); ?>/css/img/we-local.png" height="60%" width="60%" alt="We're local!"/></a></div>
+                    <div class="icon-local"><a href="/contact"><img src="<?php bloginfo('stylesheet_directory'); ?>/css/img/we-local-sm.png" alt="We're local!"/></a></div>
                 </div>
             </div>
                 <nav class="nav-background">

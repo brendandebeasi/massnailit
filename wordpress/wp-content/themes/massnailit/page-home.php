@@ -10,7 +10,7 @@ Template Name: Home Template
             <ul data-orbit>
                 <li><a href="/live-classroom-csl-education"><img src="<?php bloginfo('stylesheet_directory'); ?>/slides/affordableeducation-warm.jpg" alt=""/></a></li>
                 <li><a href="/online-contractor-csl-education"><img src="<?php bloginfo('stylesheet_directory'); ?>/slides/license-expire-hothothot.jpg" alt=""/></a></li>
-                <li><a href="/books"><img src="<?php bloginfo('stylesheet_directory'); ?>/slides/codebooks-dontdropme@2x.jpg" alt=""/></a></li>
+                <li><a href="/books"><img src="<?php bloginfo('stylesheet_directory'); ?>/slides/codebooks-dontdropme.jpg" alt=""/></a></li>
                 <li><a href="/massachusetts-regulations"><img src="<?php bloginfo('stylesheet_directory'); ?>/slides/bbrs-regulations-tunne.jpg" alt=""/></a></li>
                 <?php while (have_posts()) : the_post(); $featured = rwmb_meta( 'rw_featured_image_checkbox'); if ($featured == "1") { ?>
                     <li>
