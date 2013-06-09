@@ -1,9 +1,10 @@
 //MNI Application
 //I handle all the API functions that are used on the MNI site. I return product listings, course dates, etc
 $(document).ready(function() {
-    $('.mobileMenuToggle').on('click', function() {
-        SideSwipe.toggle('left');
-        $('.SideSwipe-panel.SideSwipe-left').fadeIn('slow');
+    var jPM = $.jPanelMenu({
+        menu: '.mobileMenu',
+        trigger: '.mobileMenuToggle',
+        duration: 300
     });
 
     $(document).foundation();

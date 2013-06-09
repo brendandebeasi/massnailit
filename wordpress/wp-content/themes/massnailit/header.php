@@ -6,7 +6,6 @@
     <title><?php wp_title()?></title>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/normalize.css" />
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/foundation.css" />
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/SideSwipe.css" />
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/style.css" />
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/vendor/custom.modernizr.js"></script>
     <!--[if lt IE 9]>
@@ -85,8 +84,8 @@
 <!--    <div class="clear"></div>-->
 </div>
 
-    <div id="container" class="SideSwipe"><div class="SideSwipe-panel SideSwipe-main">
-    <div class="hidden SideSwipe-panel SideSwipe-left"><?php wp_nav_menu( array( 'theme_location' => 'mobile-menu', 'menu_class' =>'mobile' ) ); ?></div>
+    <div id="container">
+    <div class="hidden mobileMenu"><?php wp_nav_menu( array( 'theme_location' => 'mobile-menu', 'menu_class' =>'mobile' ) ); ?></div>
         <header>
             <div class="row">
                 <div class="large-5 columns">
