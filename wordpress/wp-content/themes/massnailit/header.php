@@ -85,11 +85,10 @@
 </div>
 
     <div id="container">
-    <div class="hidden mobileMenu"><?php wp_nav_menu( array( 'theme_location' => 'mobile-menu', 'menu_class' =>'mobile' ) ); ?></div>
         <header>
             <div class="row">
                 <div class="large-5 columns">
-                    <div class="mobileMenuToggle toggle left">MENU</div>
+                    <div class="mobileMenuToggle">MENU</div>
                     <a class="brand" href="<?php bloginfo('wpurl'); ?>">
                         <div class="icon-logo"></div>
                         <div class="icon-brand"><img src="<?php bloginfo('stylesheet_directory'); ?>/css/img/mass-nail-it.png" alt="Mass Nail It"/></div>
@@ -110,4 +109,5 @@
                 </nav>
 
         </header>
+    <div class="mobileMenu"><?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' =>'mobile' ) ); ?></div>
 

@@ -29,8 +29,8 @@
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/vendor/retina.js"></script>
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/vendor/custom.modernizr.js"></script>
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/vendor/jquery.js"></script>
-    <script src="<?php bloginfo('stylesheet_directory'); ?>/js/vendor/jquery.jpanelmenu.min.js"></script>
-<!--    <script src="--><?php //bloginfo('stylesheet_directory'); ?><!--/js/vendor/jquery.jpanelmenu-transform-build.min.js"></script>-->
+<!--    <script src="--><?php //bloginfo('stylesheet_directory'); ?><!--/js/vendor/jquery.jpanelmenu.min.js"></script>-->
+    <script src="<?php bloginfo('stylesheet_directory'); ?>/js/vendor/jquery.jpanelmenu-transform-build.min.js"></script>
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/foundation.min.js"></script>
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/app.js"></script>
 </body>
