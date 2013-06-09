@@ -108,4 +108,4 @@
                 </nav>
 
         </header>
-        <div class="hidden SideSwipe-panel SideSwipe-left"><?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' =>'mobileMenu' ) ); ?></div>
+        <div class="SideSwipe-panel SideSwipe-left"><?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' =>'left' ) ); ?></div>
