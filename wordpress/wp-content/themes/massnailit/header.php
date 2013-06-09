@@ -85,7 +85,7 @@
         <header>
             <div class="row">
                 <div class="large-5 columns">
-                    <div class="toggle left">MENU</div>
+                    <div class="mobileMenuToggle toggle left">MENU</div>
                     <a class="brand" href="<?php bloginfo('wpurl'); ?>">
                         <a href="<?php bloginfo('wpurl'); ?>">
                             <div class="icon-logo"></div>
@@ -108,4 +108,4 @@
                 </nav>
 
         </header>
-        <div class="hidden SideSwipe-panel SideSwipe-left"><?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' =>'left' ) ); ?></div>
+        <div class="hidden SideSwipe-panel SideSwipe-left"><?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' =>'mobileMenu' ) ); ?></div>

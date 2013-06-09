@@ -562,7 +562,7 @@ form.custom .custom.dropdown {
 	.icon-local > a > img {
 		display:none;
 	}
-    .mobileMenu {
+    .mobileMenuToggle  {
         display: block;
     }
 	.right-icons {
