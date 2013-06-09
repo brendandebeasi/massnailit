@@ -25,7 +25,7 @@
             </footer>
             </div>
         </div>
-    <script src="<?php bloginfo('stylesheet_directory'); ?>/js/vendor/css3-mediaqueries.js"></script>
+<!--    <script src="--><?php //bloginfo('stylesheet_directory'); ?><!--/js/vendor/css3-mediaqueries.js"></script>-->
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/vendor/retina.js"></script>
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/vendor/selectivizr-min.js"></script>
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/vendor/jquery.js"></script>
