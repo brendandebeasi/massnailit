@@ -3,6 +3,7 @@
 $(document).ready(function() {
     $('.mobileMenuToggle').on('click', function() {
         SideSwipe.toggle('left');
+        $('.SideSwipe-panel.SideSwipe-left').fadeIn('slow');
     });
 
     $(document).foundation();

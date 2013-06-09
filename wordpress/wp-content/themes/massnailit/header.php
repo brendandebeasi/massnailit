@@ -86,7 +86,7 @@
 </div>
 
     <div id="container" class="SideSwipe"><div class="SideSwipe-panel SideSwipe-main">
-    <div class="SideSwipe-panel SideSwipe-left"><?php wp_nav_menu( array( 'theme_location' => 'mobile-menu', 'menu_class' =>'mobile' ) ); ?></div>
+    <div class="hidden SideSwipe-panel SideSwipe-left"><?php wp_nav_menu( array( 'theme_location' => 'mobile-menu', 'menu_class' =>'mobile' ) ); ?></div>
         <header>
             <div class="row">
                 <div class="large-5 columns">
