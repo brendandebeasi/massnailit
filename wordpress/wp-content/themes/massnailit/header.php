@@ -85,8 +85,8 @@
             <div class="row">
                 <div class="large-5 columns">
                     <a class="brand" href="<?php bloginfo('wpurl'); ?>">
+                        <div class="toggle left">MENU</div>
                         <a href="/">
-                            <div class="toggle left">MENU</div>
                             <div class="icon-logo"></div>
                             <div class="icon-brand"><img src="<?php bloginfo('stylesheet_directory'); ?>/css/img/mass-nail-it.png" alt="Mass Nail It"/></div>
                         </a>
