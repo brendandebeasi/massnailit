@@ -23,7 +23,7 @@
                     </div>
                 </div>
             </footer>
-
+            </div>
             </div>
         </div>
     <!--[if lt IE 9]>
@@ -32,7 +32,10 @@
 <!--    <script src="--><?php //bloginfo('stylesheet_directory'); ?><!--/js/vendor/stan/stan.min.js"></script>-->
     <![endif]-->
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/vendor/retina.js"></script>
+    <script src="<?php bloginfo('stylesheet_directory'); ?>/js/vendor/custom.modernizr.js"></script>
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/vendor/jquery.js"></script>
+    <script src="<?php bloginfo('stylesheet_directory'); ?>/js/vendor/overthrow.js"></script>
+    <script src="<?php bloginfo('stylesheet_directory'); ?>/js/vendor/SideSwipe.js"></script>
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/foundation.min.js"></script>
     <script src="<?php bloginfo('stylesheet_directory'); ?>/js/app.js"></script>
 </body>

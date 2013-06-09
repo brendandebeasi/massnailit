@@ -80,12 +80,13 @@
 <!--    <div class="clear"></div>-->
 </div>
 
-    <div id="container">
+    <div id="container" class="SideSwipe"><div class="SideSwipe-panel SideSwipe-main">
         <header>
             <div class="row">
                 <div class="large-5 columns">
                     <a class="brand" href="<?php bloginfo('wpurl'); ?>">
                         <a href="/">
+                            <div class="toggle left">MENU</div>
                             <div class="icon-logo"></div>
                             <div class="icon-brand"><img src="<?php bloginfo('stylesheet_directory'); ?>/css/img/mass-nail-it.png" alt="Mass Nail It"/></div>
                         </a>
@@ -106,3 +107,4 @@
                 </nav>
 
         </header>
+        <div class="hidden SideSwipe-panel SideSwipe-left"><?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' =>'left' ) ); ?></div>
